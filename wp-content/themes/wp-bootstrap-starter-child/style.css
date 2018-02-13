@@ -8,15 +8,51 @@ Template: wp-bootstrap-starter
 
 #primary {
 	margin: auto;
-}
-.bootstrap-child .work .row{
-	display: inline;
+	height: 500px;
 }
 
-.profile-container{
+.bootstrap-child .site-content{
+	padding-top: 0;
+}
+
+.bootstrap-child .container{
+	max-width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	background-image: url("assets/background.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+
+.profile-container h1{
 	text-align: center;
+	color: #FFF;
+	font-size: 5vw;
 }
 
-.profile-pic {
-	width: 100px;
+figure {
+	width: 300px;
+	margin: auto;
+	margin-top: 300px;
+}
+
+.profil-pic-frame {
+	background-color: #111;
+}
+.profile-pic{
+	border-radius: 50%;
+	vertical-align: middle;
+}
+
+.project-container{
+	background-color: #111;
+	margin: 10px;
+}
+
+.project-element{
+	display: inline-block;
+	width: 200px;
+	height: 500px;
+	margin: 25px;
 }
