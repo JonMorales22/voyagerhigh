@@ -1,0 +1,22 @@
+/*   
+Theme Name: bootstrap-starter-custom
+Description: A Child Theme of bootstrap-starter
+Template: wp-bootstrap-starter
+*/
+
+@import url(../wp-bootstrap-starter/style.css);
+
+#primary {
+	margin: auto;
+}
+.bootstrap-child .work .row{
+	display: inline;
+}
+
+.profile-container{
+	text-align: center;
+}
+
+.profile-pic {
+	width: 100px;
+}
