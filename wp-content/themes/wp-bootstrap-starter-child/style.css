@@ -6,53 +6,94 @@ Template: wp-bootstrap-starter
 
 @import url(../wp-bootstrap-starter/style.css);
 
-#primary {
-	margin: auto;
-	height: 500px;
-}
-
-.bootstrap-child .site-content{
-	padding-top: 0;
-}
-
-.bootstrap-child .container{
-	max-width: 100%;
-	margin-left: 0;
-	margin-right: 0;
-	background-image: url("assets/background.jpg");
+body{
+	width:100%;
+	position:relative;
+	background-image: url("assets/background5.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
 
-
-.profile-container h1{
-	text-align: center;
-	color: #FFF;
-	font-size: 5vw;
+p {
+	margin-bottom: 0;
 }
 
-figure {
-	width: 300px;
+p h1{
+	line-height: 0;
+}
+
+figure{
 	margin: auto;
-	margin-top: 300px;
+	position: relative;
+	width: 25%;
+	max-width: 175.5px;
+	min-width: 95px;
+}
+.content-container {
+	max-width: 100%;
+	height: 90%;
 }
 
-.profil-pic-frame {
-	background-color: #111;
+.content-container .row {
+	margin: auto;
+	width: 50%;
 }
-.profile-pic{
+
+.title, .tagline {
+	margin: inherit;
+	color: #FFFFFF;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1;
+}	
+
+.title{
+	font-family: 'Work Sans', sans-serif;
+	font-size: 5vw;
+	font-weight: bold;
+}
+
+.tagline {
+	font-family: 'Comfortaa', cursive;
+	font-size: 2vw;
+}
+
+.profile-pic-frame{
 	border-radius: 50%;
-	vertical-align: middle;
+	background-color: #FFFFFF;
+	position: absolute;
+}	
+
+.profile-pic-frame img{
+	border-radius: 50%;
+	padding: .5vw;
+}	
+
+.about-container{
+	background-color: #FFFFFF;
+}
+
+.about-title .about-text, h1, p{
+	text-align: center;
+}
+
+.about-title {
+	font-family: 'Sarina', cursive;
+	padding: 25px;
 }
 
 .project-container{
-	background-color: #111;
-	margin: 10px;
+	background-color: #FFFFFF;
+	width: 100%;
+	text-align: center;
 }
 
 .project-element{
+	width: 100px;
 	display: inline-block;
-	width: 200px;
-	height: 500px;
-	margin: 25px;
+	margin: 50px 50px 25px;
+}
+
+.project-element p {
+	font-size: 1vw;
 }
