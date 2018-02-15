@@ -22,16 +22,26 @@ p h1{
 	line-height: 0;
 }
 
+h1 {
+	padding-top: 5px;
+	margin: 0;
+}
+
+h2{
+	margin: 0;
+}
+
 figure{
-	margin: auto;
-	position: relative;
+	margin: auto;aa
 	width: 25%;
 	max-width: 175.5px;
 	min-width: 95px;
+	padding-top: 50px;
 }
+
 .content-container {
 	max-width: 100%;
-	height: 90%;
+	height: 95%;
 }
 
 .content-container .row {
@@ -51,17 +61,18 @@ figure{
 	font-family: 'Work Sans', sans-serif;
 	font-size: 5vw;
 	font-weight: bold;
+	padding-top: 100px;
 }
 
 .tagline {
 	font-family: 'Comfortaa', cursive;
 	font-size: 2vw;
+	color: #80BDB1;
 }
 
 .profile-pic-frame{
 	border-radius: 50%;
 	background-color: #FFFFFF;
-	position: absolute;
 }	
 
 .profile-pic-frame img{
@@ -69,31 +80,65 @@ figure{
 	padding: .5vw;
 }	
 
-.about-container{
-	background-color: #FFFFFF;
+.child-container{
+	background-color: #ededed;
+	text-align:center;
 }
 
-.about-title .about-text, h1, p{
-	text-align: center;
+.container-title, .about-title {
+	font-family: 'Bungee', cursive;
+	padding-top: 25px;
 }
 
-.about-title {
-	font-family: 'Sarina', cursive;
-	padding: 25px;
+.about-title h1{
+	font-size: 70px;
+	margin-top: -55px;
+	margin-bottom: 20px;
+	color: #00AA89;
 }
 
-.project-container{
-	background-color: #FFFFFF;
-	width: 100%;
-	text-align: center;
-}
-
-.project-element{
-	width: 100px;
+.project-element {
+	background-color: #80BDB1;
 	display: inline-block;
-	margin: 50px 50px 25px;
+	width: 40%;
+	margin: 5px;
 }
 
 .project-element p {
 	font-size: 1vw;
+	text-align: left;
+	display: inline;
+}
+
+.project-element .card, h2 {
+	display: inline-block;
+}
+
+.project-element .card{
+	width: 250px;
+	display: inline-block;
+	margin: 0px 10px 0px;
+	background-color: #FFF;
+	border-color: #80BDB1;
+}
+
+.card{
+	width: 250px;
+	display: inline-block;
+	margin: 0px 10px 0px;
+	background-color: #FFF;
+	border-color: #1abc9c;
+}
+
+.project-pic {
+	width: 250px;
+	height: 250px;
+	margin: auto
+}
+
+.form-container{
+	background-color: #80BDB1;
+	width: 50%;
+	margin: auto;
+	border-radius: 10%;
 }
