@@ -4,141 +4,343 @@ Description: A Child Theme of bootstrap-starter
 Template: wp-bootstrap-starter
 */
 
+
+/*
+	@800px collapse card (not block-cards!) to inline
+	@500px turn block-cards -> cards
+*/
 @import url(../wp-bootstrap-starter/style.css);
+@media screen and (max-width: 500px) {
+		body{
+		width:100%;
+		position:relative;
+		background-image: url("assets/background5.png");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
 
-body{
-	width:100%;
-	position:relative;
-	background-image: url("assets/background5.png");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+	p {
+		margin-bottom: 0;
+		color: #111;
+	}
+
+	p h1{
+		line-height: 0;
+	}
+
+	h1,h2,h3,h4,h5,form{
+		margin: 0;
+		padding: 0;
+	}
+
+	figure{
+		width: 250px;
+		margin: auto;
+		margin-top: 225px;
+		position: relative;
+		z-index: 1;
+	}
+	#dropdownMenuButton{
+		width: 50px;
+		position: fixed;
+		margin: 10px 10px 0;
+		background-color: #FFF;
+		border-color: rgba(0,0,0,.125)
+	}
+
+	.oi{
+		width: 100%;
+		color: rgba(0,0,0,.125)
+	}
+
+	/*
+	Disables the arrow that bootstrap places on dropdowns by default
+	*/
+	.dropdown-toggle::after {
+	    display:none
+	}
+
+	.scroll-menu{
+		position: fixed;
+		z-index: 1;
+	}
+
+	.content-container {
+		max-width: 100%;
+		height: 725px;
+	}
+
+	.content-container .row {
+		margin: auto;
+		width: 100%;
+		display: inline;
+	}
+
+	.title, .tagline {
+		margin: inherit;
+		color: #FFFFFF;
+		text-align: center;
+		text-transform: uppercase;
+		line-height: 1;
+	}	
+
+	.title{
+		font-family: 'Work Sans', sans-serif;
+		font-size: 10vw;
+		font-weight: bold;
+		padding-top: 250px;
+	}
+
+	.tagline {
+		font-family: 'Comfortaa', cursive;
+		font-size: 4vw;
+		color: #80BDB1;
+	}
+
+	.profile-pic-frame{
+		border-radius: 50%;
+		background-color: #FFFFFF;
+	}	
+
+	.profile-pic-frame img{
+		border-radius: 50%;
+		padding: 10px;
+	}	
+
+	.child-container{
+		background-color: #ededed;
+		text-align:center;
+		position: relative;
+	}
+
+	.container-title, .about-title {
+		font-family: 'Bungee', cursive;
+		padding-top: 25px;
+	}
+
+	.about-title{
+		padding-top: 115px;
+	}
+	.about-title h1{
+		font-size: 70px;
+		color: #318171;
+	}
+
+	.card{
+		display: inline-block;
+	}
+
+	.block{
+		width: 18rem; /*PUTTING THIS HERE FOR NOW, BE SURE TO CHANGE TO %% LATER!!*/
+		display: inline-block;
+		margin: 0px 10px 0px;
+		background-color: #FFF;
+	}
+
+	.block-content {
+		background-color: #fff;
+		display: flex;
+		flex-flow: row nowrap;
+		min-height: 100%;
+	}
+
+	.project-pic {
+		width: 250px;
+		height: 250px;
+		margin: auto
+	}
+
+	.form-container{
+		background-color: #80BDB1;
+		width: 50%;
+		margin: auto;
+		border-radius: 10%;
+	}
 }
+@media screen and (min-width:501px) {
+	/*EMPTY*/
+	body{
+		width:100%;
+		position:relative;
+		background-image: url("assets/background5.png");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
 
-p {
-	margin-bottom: 0;
-}
+	p {
+		margin-bottom: 0;
+		color: #111;
+	}
 
-p h1{
-	line-height: 0;
-}
+	p h1{
+		line-height: 0;
+	}
 
-h1 {
-	padding-top: 5px;
-	margin: 0;
-}
+	h1,h2,h3,h4,h5,form{
+		margin: 0;
+		padding: 0;
+	}
 
-h2{
-	margin: 0;
-}
+	figure{
+		max-width: 285px;
+		min-width: 285px;
+		margin: auto;
+		margin-top: 225px;
+	}
 
-figure{
-	margin: auto;aa
-	width: 25%;
-	max-width: 175.5px;
-	min-width: 95px;
-	padding-top: 50px;
-}
+	li{
+		text-align: left;
+		padding-top: 15px;
+	}
 
-.content-container {
-	max-width: 100%;
-	height: 95%;
-}
+	#dropdownMenuButton{
+		width: 50px;
+		position: fixed;
+		margin: 10px 10px 0;
+		background-color: #FFF;
+		border-color: rgba(0,0,0,.125)
+	}
 
-.content-container .row {
-	margin: auto;
-	width: 50%;
-}
+	.oi{
+		width: 100%;
+		color: rgba(0,0,0,.125)
+	}
 
-.title, .tagline {
-	margin: inherit;
-	color: #FFFFFF;
-	text-align: center;
-	text-transform: uppercase;
-	line-height: 1;
-}	
+	/*
+	Disables the arrow that bootstrap places on dropdowns by default
+	*/
+	.dropdown-toggle::after {
+	    display:none
+	}
 
-.title{
-	font-family: 'Work Sans', sans-serif;
-	font-size: 5vw;
-	font-weight: bold;
-	padding-top: 100px;
-}
+	.scroll-menu{
+		position: fixed;
+		z-index: 1;
+	}
 
-.tagline {
-	font-family: 'Comfortaa', cursive;
-	font-size: 2vw;
-	color: #80BDB1;
-}
+	.content-container {
+		max-width: 100%;
+		height: 725px;
+	}
 
-.profile-pic-frame{
-	border-radius: 50%;
-	background-color: #FFFFFF;
-}	
+	.content-container .row {
+		margin: auto;
+		width: 500px;
+	}
 
-.profile-pic-frame img{
-	border-radius: 50%;
-	padding: .5vw;
-}	
+	.title, .tagline {
+		margin: inherit;
+		color: #FFFFFF;
+		text-align: center;
+		text-transform: uppercase;
+		line-height: 1;
+	}	
 
-.child-container{
-	background-color: #ededed;
-	text-align:center;
-}
+	.title{
+		font-family: 'Work Sans', sans-serif;
+		font-size: 50px;
+		font-weight: bold;
+		padding-top: 250px;
+	}
 
-.container-title, .about-title {
-	font-family: 'Bungee', cursive;
-	padding-top: 25px;
-}
+	.tagline {
+		font-family: 'Comfortaa', cursive;
+		font-size: 22px;
+		color: #80BDB1;
+	}
 
-.about-title h1{
-	font-size: 70px;
-	margin-top: -55px;
-	margin-bottom: 20px;
-	color: #00AA89;
-}
+	.profile-pic-frame{
+		border-radius: 50%;
+		background-color: #FFFFFF;
+	}	
 
-.project-element {
-	background-color: #80BDB1;
-	display: inline-block;
-	width: 40%;
-	margin: 5px;
-}
+	.profile-pic-frame img{
+		border-radius: 50%;
+		padding: 10px;
+	}	
 
-.project-element p {
-	font-size: 1vw;
-	text-align: left;
-	display: inline;
-}
+	.child-container{
+		background-color: #ededed;
+		text-align:center;
+		padding-top: 25px;
+	}
 
-.project-element .card, h2 {
-	display: inline-block;
-}
+	.container-title, .about-title {
+		font-family: 'Bungee', cursive;
+		padding-top: 25px;
+	}
 
-.project-element .card{
-	width: 250px;
-	display: inline-block;
-	margin: 0px 10px 0px;
-	background-color: #FFF;
-	border-color: #80BDB1;
-}
+	.container-title.projects h1{
+		font-size: 60px;
+	}
 
-.card{
-	width: 250px;
-	display: inline-block;
-	margin: 0px 10px 0px;
-	background-color: #FFF;
-	border-color: #1abc9c;
-}
+	.about-title{
+		padding-top: 115px;
+	}
+	.about-title h1{
+		font-size: 70px;
+		color: #318171;
+	}
 
-.project-pic {
-	width: 250px;
-	height: 250px;
-	margin: auto
-}
+	.card{
+		display: inline-block;
+	}
 
-.form-container{
-	background-color: #80BDB1;
-	width: 50%;
-	margin: auto;
-	border-radius: 10%;
+	.card.about{
+		width: 300px;
+		height: 400px;
+		margin: 25px;
+	}
+
+	.card p{
+		text-align: left;
+	}
+
+	.card-title{
+		margin-top: 15px;
+	}
+
+	.card-text.about li {
+		padding: 0;
+	}
+
+	.block{
+		width: 550px; /*PUTTING THIS HERE FOR NOW, BE SURE TO CHANGE TO %% LATER!!*/
+		display: inline-block;
+		margin: 20px;
+		background-color: #FFF;
+	}
+
+	.block-content {
+		background-color: #fff;
+		display: flex;
+		flex-flow: row nowrap;
+		min-height: 100%;
+	}
+
+	.block-content img{
+		width: 245px;
+		height: 245px;
+		padding: 15px;
+	}
+
+	.project-pic {
+		width: 250px;
+		height: 250px;
+		margin: auto
+	}
+
+	.oi.oi-media-record {
+		font-size: 10px;
+		color: #111;
+		top: 0;
+		display: inline;
+	}
+
+	.form-container{
+		background-color: #80BDB1;
+		width: 50%;
+		margin: auto;
+		border-radius: 10%;
+	}
 }
