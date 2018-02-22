@@ -40,6 +40,7 @@ Template: wp-bootstrap-starter
 		position: relative;
 		z-index: 1;
 	}
+
 	#dropdownMenuButton{
 		width: 50px;
 		position: fixed;
@@ -188,6 +189,10 @@ Template: wp-bootstrap-starter
 		margin-top: 225px;
 	}
 
+	textarea{
+		resize: none;
+	}
+
 	li{
 		text-align: left;
 		padding-top: 15px;
@@ -270,7 +275,7 @@ Template: wp-bootstrap-starter
 		padding-top: 25px;
 	}
 
-	.container-title.projects h1{
+	.container-title h1{
 		font-size: 60px;
 	}
 
@@ -289,7 +294,7 @@ Template: wp-bootstrap-starter
 	.card.about{
 		width: 300px;
 		height: 400px;
-		margin: 25px;
+		margin: 5px;
 	}
 
 	.card p{
@@ -315,7 +320,7 @@ Template: wp-bootstrap-starter
 		background-color: #fff;
 		display: flex;
 		flex-flow: row nowrap;
-		min-height: 100%;
+		min-height: 250px;
 	}
 
 	.block-content img{
@@ -330,17 +335,83 @@ Template: wp-bootstrap-starter
 		margin: auto
 	}
 
-	.oi.oi-media-record {
-		font-size: 10px;
-		color: #111;
+	.oi.oi-phone, .oi.oi-envelope-closed{
+		font-size: 20px;
+		color: #FFF;
 		top: 0;
 		display: inline;
+		margin-right: 10px;
+	}
+	.oi.oi-envelope-closed{
+		top: 3px;
+	}
+	.wrapper{
+		background-image: url("assets/nyc-manhattan-map.png");
+		background-repeat: no-repeat;
+		height: 650px;
+	}
+	.wrapper.contact {
+		display: inline-block
 	}
 
 	.form-container{
-		background-color: #80BDB1;
+		display: inline-block;
 		width: 50%;
 		margin: auto;
 		border-radius: 10%;
+	}
+	
+	.form-container h2{
+		font-family: 'Comfortaa', cursive;
+		color: #FFF;
+	}
+
+	.form-control{
+		background-color: #11111100;
+		border-color: #11111100 #11111100 #FFFFFFFF #11111100;
+		border-radius: 0;
+		color: rgba(255,255,255,.5);
+	}
+	.form-control:focus {
+		background-color: #11111100;
+		border-color: #11111100 #11111100 #80BBB0FF #11111100;
+		box-shadow: 0 0 0 0 #80BBB0FF;
+		color: #ffffff88;
+	}
+	.form-control:focus {
+		background-color: #11111100;
+		border-color: #11111100 #11111100 #80BBB0FF #11111100;
+		box-shadow: 0 0 0 0 #80BBB0FF;
+		color: #ffffff88;
+	}
+	/*
+		#6C757D
+	*/
+	.element-title h2{
+		color: #FFF;
+	}
+	.child-element.contact{
+		width:100%;
+		margin: auto;
+	}
+	.contact-info p{
+		text-align: left;
+		color: #fff;
+		display: inline-block;
+		margin: 25px;
+		font-family: 'Comfortaa', cursive;
+	}
+
+	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  	  color: rgba(255,255,255,.5)!important;
+	}
+	::-moz-placeholder { /* Firefox 19+ */
+	  color: rgba(255,255,255,.5)!important;
+	}
+	:-ms-input-placeholder { /* IE 10+ */
+	  color: rgba(255,255,255,.5)!important;
+	}
+	:-moz-placeholder { /* Firefox 18- */
+	  color: rgba(255,255,255,.5)!important;
 	}
 }

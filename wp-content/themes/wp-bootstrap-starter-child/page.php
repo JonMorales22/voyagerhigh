@@ -64,9 +64,9 @@ TO DO:
 				<div class="child-element">
 					
 					<div class="child-content">
-						<p>My name is Jonathan Morales and I am a computer science major.</p>
-						<p>Currently I'm seeking an internship in the field, specifically in software development.</p>
-						<p>My skills, experience, and background can be viewed below.</p>
+						<p class="lead">My name is Jonathan Morales and I am a computer science major.</p>
+						<p class="lead">Currently I'm seeking an internship in the field, specifically in software development.</p>
+						<p class="lead">My skills, experience, and background can be viewed below.</p>
 					</div>
 					
 				</div>
@@ -87,8 +87,7 @@ TO DO:
 					    		<ul>
 									<li>Wordpress</li>
 									<li>Bootstrap</li>
-									<li>Xcode</li>
-									<li>Visual Studios</li>
+									<li>Xcode/Visual Studio</li>
 								</ul>
 					    </div>
 					  </div>
@@ -99,8 +98,9 @@ TO DO:
 					    <div class="card-text about">
 					    	<p>East Stroudsburg University</p>
 					    	<ul>
-					    		<li>Graduation: May 2018 (expected)</li>
-					    		<li>B.S. in Computer Science with minor Mathematics</li>
+					    		<li>Graduation: May 2018</li>
+					    		<li>B.S. in Computer Science</li>
+					    		<li>Minor in Mathematics</li>
 					    	</ul>
 					    	<p>Coursework</p>
 					    	<ul>
@@ -129,7 +129,7 @@ TO DO:
 					     		<ul>
 					     			<li>Reading</li>
 					     			<li>Cooking</li>
-					     			<li>Learning Spanish and Chinese</li>
+					     			<li>Learning Chinese</li>
 					     		</ul>
 						</div>
 					  </div>
@@ -172,28 +172,37 @@ TO DO:
 					}
 				?>
 			</div><!--projects-container-->
-			<div class="child-container">
-				<div class="form-container">
-					<div class="container-title"><h1>Contact</h1></div>
-					<form>
-					  <div class="form-group">
-					    <label for="exampleFormControlInput1">Your Name</label>
-					    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
-					  </div>
-					  	<div class="form-group">
-					    <label for="exampleFormControlInput1">Your Email</label>
-					    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-					  </div>
-					  <div class="form-group">
-					    <label for="exampleFormControlTextarea1">Message</label>
-					    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-					  </div>
-					  <div class="button-holder">
-						  <button type="button" class="btn btn-primary btn-sm">Clear</button>
-						  <button type="button" class="btn btn-primary btn-sm">Send</button>
-					  </div>
-					</form>
-				</div><!--form container-->
+			<div class="child-container contact">
+				<div class="container-title"><h1>Contact</h1></div>
+				<div class="wrapper">
+					<div class="child-element contact">
+						<div class="contact-info">
+								<p><span class="oi oi-phone"></span>570-977-2847</p>
+								<p><span class="oi oi-envelope-closed"></span>JonMorales2.718@gmail.com</p>
+						</div>
+					</div><!--child-element contact-->
+					<div class="form-container">
+						<form>
+						<h2>Send a message:</h2>
+						  <div class="form-group" novalidate>
+						    <label for="exampleFormControlInput1"></label>
+						    <input class="form-control" id="exampleFormControlInput1" placeholder="Your name" novalidate>
+						  </div>
+						  	<div class="form-group">
+						    <label for="exampleFormControlInput1"></label>
+						    <input class="form-control" id="exampleFormControlInput1" placeholder="Your email">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleFormControlTextarea1"></label>
+						    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Your message" rows="10"></textarea>
+						  </div>
+						  <div class="button-holder">
+							  <button type="button" class="btn btn-primary btn-sm">Clear</button>
+							  <button type="button" class="btn btn-primary btn-sm">Send</button>
+						  </div>
+						</form>
+					</div><!--form container-->
+				</div><!--wrapper-->
 			</div><!--contact-container-->
 		</body>
 	</main><!-- #main -->
