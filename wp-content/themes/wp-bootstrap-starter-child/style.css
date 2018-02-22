@@ -10,155 +10,7 @@ Template: wp-bootstrap-starter
 	@500px turn block-cards -> cards
 */
 @import url(../wp-bootstrap-starter/style.css);
-@media screen and (max-width: 500px) {
-		body{
-		width:100%;
-		position:relative;
-		background-image: url("assets/background5.png");
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-	}
 
-	p {
-		margin-bottom: 0;
-		color: #111;
-	}
-
-	p h1{
-		line-height: 0;
-	}
-
-	h1,h2,h3,h4,h5,form{
-		margin: 0;
-		padding: 0;
-	}
-
-	figure{
-		width: 250px;
-		margin: auto;
-		margin-top: 225px;
-		position: relative;
-		z-index: 1;
-	}
-
-	#dropdownMenuButton{
-		width: 50px;
-		position: fixed;
-		margin: 10px 10px 0;
-		background-color: #FFF;
-		border-color: rgba(0,0,0,.125)
-	}
-
-	.oi{
-		width: 100%;
-		color: rgba(0,0,0,.125)
-	}
-
-	/*
-	Disables the arrow that bootstrap places on dropdowns by default
-	*/
-	.dropdown-toggle::after {
-	    display:none
-	}
-
-	.scroll-menu{
-		position: fixed;
-		z-index: 1;
-	}
-
-	.content-container {
-		max-width: 100%;
-		height: 725px;
-	}
-
-	.content-container .row {
-		margin: auto;
-		width: 100%;
-		display: inline;
-	}
-
-	.title, .tagline {
-		margin: inherit;
-		color: #FFFFFF;
-		text-align: center;
-		text-transform: uppercase;
-		line-height: 1;
-	}	
-
-	.title{
-		font-family: 'Work Sans', sans-serif;
-		font-size: 10vw;
-		font-weight: bold;
-		padding-top: 250px;
-	}
-
-	.tagline {
-		font-family: 'Comfortaa', cursive;
-		font-size: 4vw;
-		color: #80BDB1;
-	}
-
-	.profile-pic-frame{
-		border-radius: 50%;
-		background-color: #FFFFFF;
-	}	
-
-	.profile-pic-frame img{
-		border-radius: 50%;
-		padding: 10px;
-	}	
-
-	.child-container{
-		background-color: #ededed;
-		text-align:center;
-		position: relative;
-	}
-
-	.container-title, .about-title {
-		font-family: 'Bungee', cursive;
-		padding-top: 25px;
-	}
-
-	.about-title{
-		padding-top: 115px;
-	}
-	.about-title h1{
-		font-size: 70px;
-		color: #318171;
-	}
-
-	.card{
-		display: inline-block;
-	}
-
-	.block{
-		width: 18rem; /*PUTTING THIS HERE FOR NOW, BE SURE TO CHANGE TO %% LATER!!*/
-		display: inline-block;
-		margin: 0px 10px 0px;
-		background-color: #FFF;
-	}
-
-	.block-content {
-		background-color: #fff;
-		display: flex;
-		flex-flow: row nowrap;
-		min-height: 100%;
-	}
-
-	.project-pic {
-		width: 250px;
-		height: 250px;
-		margin: auto
-	}
-
-	.form-container{
-		background-color: #80BDB1;
-		width: 50%;
-		margin: auto;
-		border-radius: 10%;
-	}
-}
-@media screen and (min-width:501px) {
 	/*EMPTY*/
 	body{
 		width:100%;
@@ -224,13 +76,13 @@ Template: wp-bootstrap-starter
 	}
 
 	.content-container {
-		max-width: 100%;
+		width: 100%;
 		height: 725px;
 	}
 
 	.content-container .row {
 		margin: auto;
-		width: 500px;
+		max-width: 500px;
 	}
 
 	.title, .tagline {
@@ -243,14 +95,14 @@ Template: wp-bootstrap-starter
 
 	.title{
 		font-family: 'Work Sans', sans-serif;
-		font-size: 50px;
+		font-size: 10vw;
 		font-weight: bold;
 		padding-top: 250px;
 	}
 
 	.tagline {
 		font-family: 'Comfortaa', cursive;
-		font-size: 22px;
+		font-size: 4vw;
 		color: #80BDB1;
 	}
 
@@ -356,8 +208,8 @@ Template: wp-bootstrap-starter
 
 	.form-container{
 		display: inline-block;
-		width: 50%;
-		margin: auto;
+		width: 75%;
+		margin: 20px auto;
 		border-radius: 10%;
 	}
 	
@@ -392,14 +244,18 @@ Template: wp-bootstrap-starter
 	}
 	.child-element.contact{
 		width:100%;
+		max-width: 400px;
 		margin: auto;
+	}
+	.contact-info{
+		padding-top: 20px;
 	}
 	.contact-info p{
 		text-align: left;
 		color: #fff;
 		display: inline-block;
-		margin: 25px;
 		font-family: 'Comfortaa', cursive;
+		font-size: 16px;
 	}
 
 	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -413,5 +269,13 @@ Template: wp-bootstrap-starter
 	}
 	:-moz-placeholder { /* Firefox 18- */
 	  color: rgba(255,255,255,.5)!important;
+	}
+
+@media (min-width: 576px) {
+	.title {
+		font-size: 50px;
+	}
+	.tagline {
+		font-size: 22px;
 	}
 }

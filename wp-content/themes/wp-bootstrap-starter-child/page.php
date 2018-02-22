@@ -70,6 +70,7 @@ TO DO:
 					</div>
 					
 				</div>
+				<!--
 				<div class="card-holder">
 					<div class="card about">
 					  <div class="card-body">
@@ -133,7 +134,7 @@ TO DO:
 					     		</ul>
 						</div>
 					  </div>
-					</div>
+					</div>-->
 				</div><!--card-holder-->
 				<div class="child-element">
 					<a href="assets/JonMorales_Resume.pdf" class="btn btn-primary" download>Download full resume here!</a>
@@ -145,7 +146,7 @@ TO DO:
 			</div><!--child-container-->
 			<div class="child-container">
 				<div class="container-title projects"><h1>Projects</h1></div>
-				<?php
+				<?php/*
 					$args = array(
 						'post_type' => 'post',
 					);
@@ -170,6 +171,7 @@ TO DO:
 						}
 						wp_reset_postdata();
 					}
+					*/
 				?>
 			</div><!--projects-container-->
 			<div class="child-container contact">
