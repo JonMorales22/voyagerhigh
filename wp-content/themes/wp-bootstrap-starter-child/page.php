@@ -70,10 +70,9 @@ TO DO:
 					</div>
 					
 				</div>
-				<!--
 				<div class="card-holder">
 					<div class="card about">
-					  <div class="card-body">
+					  <div class="card-body about">
 					    <h5 class="card-title">Skills</h5>
 					    <div class="card-text about">
 					    	<p>Programming Languages</p>
@@ -94,7 +93,7 @@ TO DO:
 					  </div>
 					</div>
 					<div class="card about">
-					  <div class="card-body">
+					  <div class="card-body about">
 					    <h5 class="card-title">Education</h5>
 					    <div class="card-text about">
 					    	<p>East Stroudsburg University</p>
@@ -106,16 +105,16 @@ TO DO:
 					    	<p>Coursework</p>
 					    	<ul>
 					    		<li>Software Engineering</li>
-					    		<li>Data Structures & Algorithms</li>
+					    		<li>Data Structures</li>
 					    		<li>Operating Systems</li>
 					    		<li>Artificial Intelligence</li>
-					    		<li>Algorithmic Graph Theory</li>
+					    		<li>Graph Theory</li>
 					    	</ul>
 					    </div>
 					  </div>
 					</div>
 					<div class="card about">
-					  <div class="card-body">
+					  <div class="card-body about">
 					    <h5 class="card-title">Hobbies</h5>
 					     <div class="card-text about">
 					     	<p>Music</p>
@@ -134,7 +133,7 @@ TO DO:
 					     		</ul>
 						</div>
 					  </div>
-					</div>-->
+					</div>
 				</div><!--card-holder-->
 				<div class="child-element">
 					<a href="assets/JonMorales_Resume.pdf" class="btn btn-primary" download>Download full resume here!</a>
@@ -146,7 +145,7 @@ TO DO:
 			</div><!--child-container-->
 			<div class="child-container">
 				<div class="container-title projects"><h1>Projects</h1></div>
-				<?php/*
+				<?php
 					$args = array(
 						'post_type' => 'post',
 					);
@@ -171,7 +170,6 @@ TO DO:
 						}
 						wp_reset_postdata();
 					}
-					*/
 				?>
 			</div><!--projects-container-->
 			<div class="child-container contact">

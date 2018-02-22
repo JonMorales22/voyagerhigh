@@ -139,14 +139,20 @@ Template: wp-bootstrap-starter
 		color: #318171;
 	}
 
-	.card{
-		display: inline-block;
+	.card.about {
+		width: 100%;
+		max-width: 330px;
+		height: 300px;
+		margin: 25px auto;
 	}
 
-	.card.about{
-		width: 300px;
-		height: 400px;
-		margin: 5px;
+	.card-text.about{
+		width: 245px;
+	}
+
+
+	.card-body.about{
+		padding: 8px;
 	}
 
 	.card p{
@@ -277,5 +283,27 @@ Template: wp-bootstrap-starter
 	}
 	.tagline {
 		font-size: 22px;
+	}
+}
+
+@media (min-width: 768px)
+{
+	.card-body.about{
+		padding: 1.25rem;
+	}
+
+	.card-text.about{
+		width: 245px;
+	}
+
+	.card.about{
+		width: 30%;
+		max-width: 300px;
+		height: 400px;
+		margin: 5px 0px 5px 0px;
+	}
+
+	.card{
+		display: inline-block;
 	}
 }
