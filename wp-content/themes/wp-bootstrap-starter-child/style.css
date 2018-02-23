@@ -58,6 +58,10 @@ Template: wp-bootstrap-starter
 		border-color: rgba(0,0,0,.125)
 	}
 
+	.dropdown-item{
+		
+	}
+
 	.oi{
 		width: 100%;
 		color: rgba(0,0,0,.125)
@@ -128,7 +132,7 @@ Template: wp-bootstrap-starter
 	}
 
 	.container-title h1{
-		font-size: 60px;
+		font-size: 10.4vw;
 	}
 
 	.about-title{
@@ -168,15 +172,14 @@ Template: wp-bootstrap-starter
 	}
 
 	.block{
-		width: 550px; /*PUTTING THIS HERE FOR NOW, BE SURE TO CHANGE TO %% LATER!!*/
+		width: 90%; /*PUTTING THIS HERE FOR NOW, BE SURE TO CHANGE TO %% LATER!!*/
 		display: inline-block;
-		margin: 20px;
+		margin: 5px;
 		background-color: #FFF;
 	}
 
 	.block-content {
 		background-color: #fff;
-		display: flex;
 		flex-flow: row nowrap;
 		min-height: 250px;
 	}
@@ -283,6 +286,18 @@ Template: wp-bootstrap-starter
 	}
 	.tagline {
 		font-size: 22px;
+	}
+	.card {
+		margin: 20px 1rem 20px 1rem;
+	}
+	.block{
+		width: 550px;
+	}
+	.block-content{
+		display: flex;
+	}
+	.container-title h1{
+		font-size: 60px;
 	}
 }
 

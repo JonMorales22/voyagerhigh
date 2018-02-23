@@ -39,14 +39,14 @@ TO DO:
 				    <span class="oi oi-menu"></span>
 				  </button>
 				  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-				  	<a class="dropdown-item" href="#home">Home</a>
+				  	<a class="dropdown-item" href="#scroll-home">Home</a>
 				    <a class="dropdown-item" href="#scroll-about">About</a>
 				    <a class="dropdown-item" href="#scroll-projects">Projects</a>
 				    <a class="dropdown-item" href="#scroll-contact">Contact</a>
 				  </div>
 				</div>
 			</div>
-			<div class="content-container">
+			<div id="scroll-home" class="content-container">
 				<div class="row"> 
 					<div class ="title">Jon Morales</div>
 					<div class ="tagline">Coder. Musician. Lover of Learning.</div>
@@ -59,7 +59,7 @@ TO DO:
 					</figure>
 				</div>
 			</div><!--content-container-->
-			<div class="child-container">
+			<div id="scroll-about" class="child-container">
 				<div class="about-title"><h1>About</h1></div>
 				<div class="child-element">
 					
@@ -143,7 +143,7 @@ TO DO:
 					<!-- <img class="icon" src="<?php //echo get_stylesheet_directory_uri(); ?>/assets/svg/data-transfer-download.svg"-->
 				</div>
 			</div><!--child-container-->
-			<div class="child-container">
+			<div id="scroll-projects" class="child-container">
 				<div class="container-title projects"><h1>Projects</h1></div>
 				<?php
 					$args = array(
@@ -172,7 +172,7 @@ TO DO:
 					}
 				?>
 			</div><!--projects-container-->
-			<div class="child-container contact">
+			<div id="scroll-contact" class="child-container contact">
 				<div class="container-title"><h1>Contact</h1></div>
 				<div class="wrapper">
 					<div class="child-element contact">
@@ -204,6 +204,8 @@ TO DO:
 					</div><!--form container-->
 				</div><!--wrapper-->
 			</div><!--contact-container-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/scripts.js"></script>
 		</body>
 	</main><!-- #main -->
 
