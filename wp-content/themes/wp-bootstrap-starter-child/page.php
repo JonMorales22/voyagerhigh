@@ -59,156 +59,157 @@ TO DO:
 					</figure>
 				</div>
 			</div><!--content-container-->
-			<div id="scroll-about" class="child-container">
-				<div class="about-title"><h1>About</h1></div>
-				<div class="child-element">
-					
-					<div class="child-content">
-						<p class="lead">My name is Jonathan Morales and I am a computer science major.</p>
-						<p class="lead">Currently I'm seeking an internship in the field, specifically in software development.</p>
-						<p class="lead">My skills, experience, and background can be viewed below.</p>
-					</div>
-					
-				</div>
-				<div class="card-holder">
-					<div class="card about">
-					  <div class="card-body about">
-					    <h5 class="card-title">Skills</h5>
-					    <div class="card-text about">
-					    	<p>Programming Languages</p>
-					    		<ul>
-					    			<li>C/C++/C#</li>
-					    			<li>Java</li>
-					    			<li>Javascript
-					    			<li>HTML/CSS</li>
-					    			<li>Git</li>
-					    		</ul>
-					    	<p>Software/Operating Systems</p>
-					    		<ul>
-									<li>Wordpress</li>
-									<li>Bootstrap</li>
-									<li>Xcode/Visual Studio</li>
-								</ul>
-					    </div>
-					  </div>
-					</div>
-					<div class="card about">
-					  <div class="card-body about">
-					    <h5 class="card-title">Education</h5>
-					    <div class="card-text about">
-					    	<p>East Stroudsburg University</p>
-					    	<ul>
-					    		<li>Graduation: May 2018</li>
-					    		<li>B.S. in Computer Science</li>
-					    		<li>Minor in Mathematics</li>
-					    	</ul>
-					    	<p>Coursework</p>
-					    	<ul>
-					    		<li>Software Engineering</li>
-					    		<li>Data Structures</li>
-					    		<li>Operating Systems</li>
-					    		<li>Artificial Intelligence</li>
-					    		<li>Graph Theory</li>
-					    	</ul>
-					    </div>
-					  </div>
-					</div>
-					<div class="card about">
-					  <div class="card-body about">
-					    <h5 class="card-title">Hobbies</h5>
-					     <div class="card-text about">
-					     	<p>Music</p>
-					     		<ul>
-					     			<li>Guitar</li>
-					     			<li>Piano</li>
-					     			<li>Bass Guitar</li>
-					     			<li>Singing</li>
-					     			<li>Bongos</li>
-					     		</ul>
-					     	<p>Other</p>
-					     		<ul>
-					     			<li>Reading</li>
-					     			<li>Cooking</li>
-					     			<li>Learning Chinese</li>
-					     		</ul>
+				<div class="big-container">
+				<div id="scroll-about" class="child-container">
+					<div class="about-title"><h1>About</h1></div>
+					<div class="child-element">
+						
+						<div class="child-content">
+							<p class="lead">My name is Jonathan Morales and I am a computer science major.</p>
+							<p class="lead">Currently I'm seeking an internship in the field, specifically in software development.</p>
+							<p class="lead">My skills, experience, and background can be viewed below.</p>
 						</div>
-					  </div>
+						
 					</div>
-				</div><!--card-holder-->
-				<div class="child-element">
-					<a href="assets/JonMorales_Resume.pdf" class="btn btn-primary" download>Download full resume here!</a>
-					<!--<form>
-						<input class="btn btn-primary"  value="Download full resume here" onclick="window.location.href='localhost/VoyagerHigh/public_html/wp-content/themes/wp-bootstrap-starter-child/assets/JonMorales_Resume.pdf'">
-					</form>-->
-					<!-- <img class="icon" src="<?php //echo get_stylesheet_directory_uri(); ?>/assets/svg/data-transfer-download.svg"-->
-				</div>
-			</div><!--child-container-->
-			<div id="scroll-projects" class="child-container">
-				<div class="container-title projects"><h1>Projects</h1></div>
-				<?php
-					$args = array(
-						'post_type' => 'post',
-					);
-					$query = new WP_Query($args);
+					<div class="card-holder">
+						<div class="card about">
+						  <div class="card-body about">
+						    <h5 class="card-title">Skills</h5>
+						    <div class="card-text about">
+						    	<p>Programming Languages</p>
+						    		<ul>
+						    			<li>C/C++/C#</li>
+						    			<li>Java</li>
+						    			<li>Javascript
+						    			<li>HTML/CSS</li>
+						    			<li>Git</li>
+						    		</ul>
+						    	<p>Software/Operating Systems</p>
+						    		<ul>
+										<li>Wordpress</li>
+										<li>Bootstrap</li>
+										<li>Xcode/Visual Studio</li>
+									</ul>
+						    </div>
+						  </div>
+						</div>
+						<div class="card about">
+						  <div class="card-body about">
+						    <h5 class="card-title">Education</h5>
+						    <div class="card-text about">
+						    	<p>East Stroudsburg University</p>
+						    	<ul>
+						    		<li>Graduation: May 2018</li>
+						    		<li>B.S. in Computer Science</li>
+						    		<li>Minor in Mathematics</li>
+						    	</ul>
+						    	<p>Coursework</p>
+						    	<ul>
+						    		<li>Software Engineering</li>
+						    		<li>Data Structures</li>
+						    		<li>Operating Systems</li>
+						    		<li>Artificial Intelligence</li>
+						    		<li>Graph Theory</li>
+						    	</ul>
+						    </div>
+						  </div>
+						</div>
+						<div class="card about">
+						  <div class="card-body about">
+						    <h5 class="card-title">Hobbies</h5>
+						     <div class="card-text about">
+						     	<p>Music</p>
+						     		<ul>
+						     			<li>Guitar</li>
+						     			<li>Piano</li>
+						     			<li>Bass Guitar</li>
+						     			<li>Singing</li>
+						     			<li>Bongos</li>
+						     		</ul>
+						     	<p>Other</p>
+						     		<ul>
+						     			<li>Reading</li>
+						     			<li>Cooking</li>
+						     			<li>Learning Chinese</li>
+						     		</ul>
+							</div>
+						  </div>
+						</div>
+					</div><!--card-holder-->
+					<div class="child-element">
+						<a href="assets/JonMorales_Resume.pdf" class="btn btn-primary" download>Download full resume here!</a>
+						<!--<form>
+							<input class="btn btn-primary"  value="Download full resume here" onclick="window.location.href='localhost/VoyagerHigh/public_html/wp-content/themes/wp-bootstrap-starter-child/assets/JonMorales_Resume.pdf'">
+						</form>-->
+						<!-- <img class="icon" src="<?php //echo get_stylesheet_directory_uri(); ?>/assets/svg/data-transfer-download.svg"-->
+					</div>
+				</div><!--child-container-->
+				<div id="scroll-projects" class="child-container">
+					<div class="container-title projects"><h1>Projects</h1></div>
+					<?php
+						$args = array(
+							'post_type' => 'post',
+						);
+						$query = new WP_Query($args);
 
-					if($query->have_posts() ){
-						while($query->have_posts()){
-							$query->the_post();
-							echo "<div class='card block'>";
-								echo "<div class='card-title'><h4>"; the_title(); echo "</h4></div>";
-								echo "<div class='block-content'>";
-								if(has_post_thumbnail())
-								{
-									$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); 
-									echo "<img src='" . $featured_img_url . "'>";
-								}
-								echo "<div class='card-text'>"; 
-								echo get_the_content();
-								echo "</div>";
-								echo "</div>";//<----end card-body ---->
-							echo "</div>"; //<----end card-block ---->
+						if($query->have_posts() ){
+							while($query->have_posts()){
+								$query->the_post();
+								echo "<div class='card block'>";
+									echo "<div class='card-title'><h4>"; the_title(); echo "</h4></div>";
+									echo "<div class='block-content'>";
+									if(has_post_thumbnail())
+									{
+										$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); 
+										echo "<img src='" . $featured_img_url . "'>";
+									}
+									echo "<div class='card-text'>"; 
+									echo get_the_content();
+									echo "</div>";
+									echo "</div>";//<----end card-body ---->
+								echo "</div>"; //<----end card-block ---->
+							}
+							wp_reset_postdata();
 						}
-						wp_reset_postdata();
-					}
-				?>
-			</div><!--projects-container-->
-			<div id="scroll-contact" class="child-container contact">
-				<div class="container-title"><h1>Contact</h1></div>
-				<div class="wrapper">
-					<div class="child-element contact">
-						<div class="contact-info">
-								<p><span class="oi oi-phone"></span>570-977-2847</p>
-								<p><span class="oi oi-envelope-closed"></span>JonMorales2.718@gmail.com</p>
-						</div>
-					</div><!--child-element contact-->
-					<div class="form-container">
-						<form>
-						<h2>Send a message:</h2>
-						  <div class="form-group" novalidate>
-						    <label for="exampleFormControlInput1"></label>
-						    <input class="form-control" id="exampleFormControlInput1" placeholder="Your name" novalidate>
-						  </div>
-						  	<div class="form-group">
-						    <label for="exampleFormControlInput1"></label>
-						    <input class="form-control" id="exampleFormControlInput1" placeholder="Your email">
-						  </div>
-						  <div class="form-group">
-						    <label for="exampleFormControlTextarea1"></label>
-						    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Your message" rows="10"></textarea>
-						  </div>
-						  <div class="button-holder">
-							  <button type="button" class="btn btn-primary btn-sm">Clear</button>
-							  <button type="button" class="btn btn-primary btn-sm">Send</button>
-						  </div>
-						</form>
-					</div><!--form container-->
-				</div><!--wrapper-->
-			</div><!--contact-container-->
+					?>
+				</div><!--projects-container-->
+				<div id="scroll-contact" class="child-container contact">
+					<div class="container-title"><h1>Contact</h1></div>
+					<div class="wrapper">
+						<div class="child-element contact">
+							<div class="contact-info">
+									<p><span class="oi oi-phone"></span>570-977-2847</p>
+									<p><span class="oi oi-envelope-closed"></span>JonMorales2.718@gmail.com</p>
+							</div>
+						</div><!--child-element contact-->
+						<div class="form-container">
+							<form>
+							<h2>Send a message:</h2>
+							  <div class="form-group" novalidate>
+							    <label for="exampleFormControlInput1"></label>
+							    <input class="form-control" id="exampleFormControlInput1" placeholder="Your name" novalidate>
+							  </div>
+							  	<div class="form-group">
+							    <label for="exampleFormControlInput1"></label>
+							    <input class="form-control" id="exampleFormControlInput1" placeholder="Your email">
+							  </div>
+							  <div class="form-group">
+							    <label for="exampleFormControlTextarea1"></label>
+							    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Your message" rows="10"></textarea>
+							  </div>
+							  <div class="button-holder">
+								  <button type="button" class="btn btn-primary btn-sm">Clear</button>
+								  <button type="button" class="btn btn-primary btn-sm">Send</button>
+							  </div>
+							</form>
+						</div><!--form container-->
+					</div><!--wrapper-->
+				</div><!--contact-container-->
+			</div><!--CONATINER-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/scripts.js"></script>
 		</body>
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
 get_footer(); ?>

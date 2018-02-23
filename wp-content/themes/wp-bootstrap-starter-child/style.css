@@ -58,6 +58,12 @@ Template: wp-bootstrap-starter
 		border-color: rgba(0,0,0,.125)
 	}
 
+	.big-container{
+		background-color: #ededed;
+		max-width: 100%;
+		padding: 0;
+	}
+
 	.dropdown-item{
 		
 	}
@@ -121,7 +127,6 @@ Template: wp-bootstrap-starter
 	}	
 
 	.child-container{
-		background-color: #ededed;
 		text-align:center;
 		padding-top: 25px;
 	}
@@ -280,7 +285,7 @@ Template: wp-bootstrap-starter
 	  color: rgba(255,255,255,.5)!important;
 	}
 
-@media (min-width: 576px) {
+@media only screen and (min-width: 576px) {
 	.title {
 		font-size: 50px;
 	}
@@ -301,7 +306,7 @@ Template: wp-bootstrap-starter
 	}
 }
 
-@media (min-width: 768px)
+@media only screen and (min-width: 768px)
 {
 	.card-body.about{
 		padding: 1.25rem;
