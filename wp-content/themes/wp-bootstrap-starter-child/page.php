@@ -29,6 +29,7 @@ TO DO:
 		<?php
 			wp_head();
 		?>
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
 	<main id="main" class="site-main" role="main">
@@ -179,7 +180,7 @@ TO DO:
 						<div class="child-element contact">
 							<div class="contact-info">
 									<p><span class="oi oi-phone"></span>570-977-2847</p>
-									<p><span class="oi oi-envelope-closed"></span>JonMorales2.718@gmail.com</p>
+									<p><span class="oi oi-envelope-closed"></span><a href="mailto:jonmorales2.718@gmail.com">JonMorales2.718@gmail.com</a></p>
 							</div>
 						</div><!--child-element contact-->
 						<div class="form-container">

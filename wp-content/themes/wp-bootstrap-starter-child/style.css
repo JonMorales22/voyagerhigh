@@ -272,6 +272,14 @@ Template: wp-bootstrap-starter
 		font-size: 16px;
 	}
 
+	a{
+		color: #FFF;
+	}
+	a:hover {
+		color: #80BBB0FF;
+		text-decoration: none;
+	}
+
 	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   	  color: rgba(255,255,255,.5)!important;
 	}
