@@ -15,7 +15,7 @@ Template: wp-bootstrap-starter
 	body{
 		width:100%;
 		position:relative;
-		background-image: url("assets/background5.png");
+		background-image: url("../../uploads/2018/02/background5.png");
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 	}

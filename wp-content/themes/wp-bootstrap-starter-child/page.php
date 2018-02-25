@@ -14,12 +14,8 @@
 
 /*
 TO DO:
-	-get the media queries to work the RIGHT way, the way I am doing it now is just waaay too sloppy
-	-fix the block-card body at screen width. It acts dumb at 500px (i think)
-	-make it so the card section under About collapses to 1 column (acts dumb at 788px)
-	-position absolute positions element to nearest ANCESTOR -> might be able to use this for the profile-pic (figure)
-	-fix the contact form section
-	-get scroll button to work/ other javascript bells+whistles
+	-Get the Submit button in contacts working properly
+	-figure out how to get background-img to load quicker
 */
 
 ?>
