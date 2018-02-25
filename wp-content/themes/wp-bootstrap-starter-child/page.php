@@ -40,14 +40,14 @@ TO DO:
 				    <span class="oi oi-menu"></span>
 				  </button>
 				  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-				  	<a class="dropdown-item" href="#scroll-home">Home</a>
-				    <a class="dropdown-item" href="#scroll-about">About</a>
-				    <a class="dropdown-item" href="#scroll-projects">Projects</a>
-				    <a class="dropdown-item" href="#scroll-contact">Contact</a>
+				  	<a class="dropdown-item" href="#home">Home</a>
+				    <a class="dropdown-item" href="#about">About</a>
+				    <a class="dropdown-item" href="#projects">Projects</a>
+				    <a class="dropdown-item" href="#contact">Contact</a>
 				  </div>
 				</div>
 			</div>
-			<div id="scroll-home" class="content-container">
+			<div id="home" class="content-container">
 				<div class="row"> 
 					<div class ="title">Jon Morales</div>
 					<div class ="tagline">Coder. Musician. Lover of Learning.</div>
@@ -61,7 +61,7 @@ TO DO:
 				</div>
 			</div><!--content-container-->
 				<div class="big-container">
-				<div id="scroll-about" class="child-container">
+				<div id="about" class="child-container">
 					<div class="about-title"><h1>About</h1></div>
 					<div class="child-element">
 						
@@ -138,14 +138,14 @@ TO DO:
 						</div>
 					</div><!--card-holder-->
 					<div class="child-element">
-						<a href="assets/JonMorales_Resume.pdf" class="btn btn-primary" download>Download full resume here!</a>
+						<a href="assets/JonMorales_Resume.pdf" class="btn btn-primary" download>Download full resume</a>
 						<!--<form>
 							<input class="btn btn-primary"  value="Download full resume here" onclick="window.location.href='localhost/VoyagerHigh/public_html/wp-content/themes/wp-bootstrap-starter-child/assets/JonMorales_Resume.pdf'">
 						</form>-->
 						<!-- <img class="icon" src="<?php //echo get_stylesheet_directory_uri(); ?>/assets/svg/data-transfer-download.svg"-->
 					</div>
 				</div><!--child-container-->
-				<div id="scroll-projects" class="child-container">
+				<div id="projects" class="child-container">
 					<div class="container-title projects"><h1>Projects</h1></div>
 					<?php
 						$args = array(
@@ -174,7 +174,7 @@ TO DO:
 						}
 					?>
 				</div><!--projects-container-->
-				<div id="scroll-contact" class="child-container contact">
+				<div id="contact" class="child-container contact">
 					<div class="container-title"><h1>Contact</h1></div>
 					<div class="wrapper">
 						<div class="child-element contact">
@@ -184,9 +184,9 @@ TO DO:
 							</div>
 						</div><!--child-element contact-->
 						<div class="form-container">
-							<form>
+							<form id="target">
 							<h2>Send a message:</h2>
-							  <div class="form-group" novalidate>
+							  <div class="form-group">
 							    <label for="exampleFormControlInput1"></label>
 							    <input class="form-control" id="exampleFormControlInput1" placeholder="Your name" novalidate>
 							  </div>
@@ -199,8 +199,8 @@ TO DO:
 							    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Your message" rows="10"></textarea>
 							  </div>
 							  <div class="button-holder">
-								  <button type="button" class="btn btn-primary btn-sm">Clear</button>
-								  <button type="button" class="btn btn-primary btn-sm">Send</button>
+							  		<button type="submit" class="btn btn-primary btn-sm">Send</button>
+								  	<button type="reset" class="btn btn-primary btn-sm">Clear</button>
 							  </div>
 							</form>
 						</div><!--form container-->
