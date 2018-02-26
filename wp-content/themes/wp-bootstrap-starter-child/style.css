@@ -22,7 +22,10 @@ Template: wp-bootstrap-starter
 
 	p {
 		margin-bottom: 0;
-		color: #111;
+	}
+
+	a p {
+		color: inherit;
 	}
 
 	p h1{
@@ -210,11 +213,12 @@ Template: wp-bootstrap-starter
 	}
 	.oi.oi-envelope-closed{
 		top: 3px;
+		color: inherit;
 	}
 	.wrapper{
 		background-image: url("assets/nyc-manhattan-map.png");
 		background-repeat: no-repeat;
-		height: 650px;
+		height: 600px;
 	}
 	.wrapper.contact {
 		display: inline-block
@@ -244,10 +248,10 @@ Template: wp-bootstrap-starter
 		box-shadow: 0 0 0 0 #80BBB0FF;
 		color: #ffffff88;
 	}
-	.form-control:focus {
+	.form-control:invalid {
 		background-color: #11111100;
-		border-color: #11111100 #11111100 #80BBB0FF #11111100;
-		box-shadow: 0 0 0 0 #80BBB0FF;
+		border-color: #11111100 #11111100 #CE5353FF #11111100;
+		box-shadow: 0 0 0 0 #CE5353FF;
 		color: #ffffff88;
 	}
 	/*
@@ -256,32 +260,29 @@ Template: wp-bootstrap-starter
 	.element-title h2{
 		color: #FFF;
 	}
+
 	.child-element.contact{
 		width:100%;
-		max-width: 400px;
-		margin: auto;
-	}
-	.contact-info{
-		padding-top: 20px;
-	}
-	.contact-info p{
-		text-align: left;
-		color: #fff;
+		color: #FFF;
 		display: inline-block;
+		margin: auto;
+		padding-top: 10px;
+	}
+
+	.contact-info{
+		display: inline-block;
+	}
+
+	.contact-info p{
+		text-align: center;
+		color: inherit;
 		font-family: 'Comfortaa', cursive;
 		font-size: 16px;
 	}
 
 	.back-to-top{
-		display: none;
 		color: #FFF;
-		top: 125px;
-		margin-left: 90%;
-		position: fixed;
-	}
-
-	.back-to-top{
-		color: #808BBBFF;
+		display: inline;
 	}
 
 	.oi.oi-chevron-top{

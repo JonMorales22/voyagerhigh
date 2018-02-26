@@ -17,7 +17,6 @@
 TO DO:
 	-Get the Submit button in contacts working properly
 	-fix the placement of a few divs (container-titles mostly)
-	-make button to return to top appear at bottom of page
 	-make scroll menu look a little nicer
 	-get scroll menu to send user to a nice spot in the page instead of just the general area
 */
@@ -139,10 +138,6 @@ TO DO:
 					</div><!--card-holder-->
 					<div class="child-element">
 						<a href="assets/JonMorales_Resume.pdf" class="btn btn-primary" download>Download full resume</a>
-						<!--<form>
-							<input class="btn btn-primary"  value="Download full resume here" onclick="window.location.href='localhost/VoyagerHigh/public_html/wp-content/themes/wp-bootstrap-starter-child/assets/JonMorales_Resume.pdf'">
-						</form>-->
-						<!-- <img class="icon" src="<?php //echo get_stylesheet_directory_uri(); ?>/assets/svg/data-transfer-download.svg"-->
 					</div>
 				</div><!--child-container-->
 				<div id="projects" class="child-container">
@@ -180,23 +175,28 @@ TO DO:
 						<div class="child-element contact">
 							<div class="contact-info">
 									<p><span class="oi oi-phone"></span>570-977-2847</p>
-									<p><span class="oi oi-envelope-closed"></span><a href="mailto:jonmorales2.718@gmail.com">JonMorales2.718@gmail.com</a></p>
+									<a href="mailto:jonmorales2.718@gmail.com">
+										<p>
+											<span class="oi oi-envelope-closed"></span>
+											JonMorales2.718@gmail.com
+										</p>
+									</a>
 							</div>
 						</div><!--child-element contact-->
 						<div class="form-container">
 							<form id="target">
 							<h2>Send a message:</h2>
 							  <div class="form-group">
-							    <label for="exampleFormControlInput1"></label>
-							    <input class="form-control" id="exampleFormControlInput1" placeholder="Your name" novalidate>
+							    <label for="name"></label>
+							    <input class="form-control" id="exampleFormControlInput1" type="text" placeholder="Your name" novalidate>
 							  </div>
 							  	<div class="form-group">
-							    <label for="exampleFormControlInput1"></label>
-							    <input class="form-control" id="exampleFormControlInput1" placeholder="Your email">
+							    <label for="email"></label>
+							    <input class="form-control" id="exampleFormControlInput1" type="email" placeholder="Your email">
 							  </div>
-							  <div class="form-group">
+							  <div class="message">
 							    <label for="exampleFormControlTextarea1"></label>
-							    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Your message" rows="10"></textarea>
+							    <textarea class="form-control" id="exampleFormControlTextarea1" type="text" placeholder="Your message" rows="10"></textarea>
 							  </div>
 							  <div class="button-holder">
 							  		<button type="submit" class="btn btn-primary btn-sm">Send</button>
@@ -206,7 +206,10 @@ TO DO:
 						</div><!--form container-->
 						<div id="scrollTop" class="back-to-top">
 							<a class="scroll" href="#home">
-								<span class="oi oi-chevron-top"></span>Back to Top
+								<p>
+									<span class="oi oi-chevron-top"></span>
+									Back to Top
+								</p>
 							</a>
 						</div>
 					</div><!--wrapper-->
