@@ -272,6 +272,22 @@ Template: wp-bootstrap-starter
 		font-size: 16px;
 	}
 
+	.back-to-top{
+		display: none;
+		color: #FFF;
+		top: 125px;
+		margin-left: 90%;
+		position: fixed;
+	}
+
+	.back-to-top{
+		color: #808BBBFF;
+	}
+
+	.oi.oi-chevron-top{
+		color: inherit;
+	}
+
 	a{
 		color: #FFF;
 	}

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php
 /**
  * The template for displaying all pages
@@ -15,7 +16,10 @@
 /*
 TO DO:
 	-Get the Submit button in contacts working properly
-	-figure out how to get background-img to load quicker
+	-fix the placement of a few divs (container-titles mostly)
+	-make button to return to top appear at bottom of page
+	-make scroll menu look a little nicer
+	-get scroll menu to send user to a nice spot in the page instead of just the general area
 */
 
 ?>
@@ -36,10 +40,10 @@ TO DO:
 				    <span class="oi oi-menu"></span>
 				  </button>
 				  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-				  	<a class="dropdown-item" href="#home">Home</a>
-				    <a class="dropdown-item" href="#about">About</a>
-				    <a class="dropdown-item" href="#projects">Projects</a>
-				    <a class="dropdown-item" href="#contact">Contact</a>
+				  	<a class="scroll dropdown-item" href="#home">Home</a>
+				    <a class="scroll dropdown-item" href="#about">About</a>
+				    <a class="scroll dropdown-item" href="#projects">Projects</a>
+				    <a class="scroll dropdown-item" href="#contact">Contact</a>
 				  </div>
 				</div>
 			</div>
@@ -200,6 +204,11 @@ TO DO:
 							  </div>
 							</form>
 						</div><!--form container-->
+						<div id="scrollTop" class="back-to-top">
+							<a class="scroll" href="#home">
+								<span class="oi oi-chevron-top"></span>Back to Top
+							</a>
+						</div>
 					</div><!--wrapper-->
 				</div><!--contact-container-->
 			</div><!--CONATINER-->
@@ -210,3 +219,5 @@ TO DO:
 
 <?php
 get_footer(); ?>
+</html>
+
