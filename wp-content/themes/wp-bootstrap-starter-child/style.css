@@ -217,8 +217,7 @@ Template: wp-bootstrap-starter
 	}
 	.wrapper{
 		background-image: url("assets/nyc-manhattan-map.png");
-		background-repeat: no-repeat;
-		height: 600px;
+		background-repeat: no-repeat;asdf
 	}
 	.wrapper.contact {
 		display: inline-block
@@ -250,7 +249,13 @@ Template: wp-bootstrap-starter
 	}
 	.form-control:invalid {
 		background-color: #11111100;
-		border-color: #11111100 #11111100 #CE5353FF #11111100;
+		border-color: #11111100 #11111100 #FFFFFF #11111100;
+		box-shadow: 0 0 0 0 #CE5353FF;
+		color: #ffffff88;
+	}
+	.form-control:valid {
+		background-color: #11111100;
+		border-color: #11111100 #11111100 #80BBB0FF #11111100;
 		box-shadow: 0 0 0 0 #CE5353FF;
 		color: #ffffff88;
 	}

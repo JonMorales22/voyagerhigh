@@ -188,18 +188,22 @@ TO DO:
 							<h2>Send a message:</h2>
 							  <div class="form-group">
 							    <label for="name"></label>
-							    <input class="form-control" id="exampleFormControlInput1" type="text" placeholder="Your name" novalidate>
+							    <input class="form-control" id="exampleFormControlInput1" type="text" placeholder="Your name" required>
 							  </div>
-							  	<div class="form-group">
+							  <div class="form-group">
 							    <label for="email"></label>
-							    <input class="form-control" id="exampleFormControlInput1" type="email" placeholder="Your email">
+							    <input class="form-control" id="exampleFormControlInput1" type="email" placeholder="email@email" required>
 							  </div>
 							  <div class="message">
 							    <label for="exampleFormControlTextarea1"></label>
-							    <textarea class="form-control" id="exampleFormControlTextarea1" type="text" placeholder="Your message" rows="10"></textarea>
+							    <textarea class="form-control" id="exampleFormControlTextarea1" type="text" placeholder="Your message" rows="10" required></textarea>
+							  </div>
+							  <div class="form-group">
+							    <label for="Verification"></label>
+							    <input class="form-control" id="exampleFormControlInput1" type="text" placeholder="Prove you're human: 2+2=?" required>
 							  </div>
 							  <div class="button-holder">
-							  		<button type="submit" class="btn btn-primary btn-sm">Send</button>
+							  		<button id="btn-popper" type="submit" class="btn btn-primary btn-sm" data-container="body" data-toggle="popover" data-placement="left" data-content="poop message">Send</button>
 								  	<button type="reset" class="btn btn-primary btn-sm">Clear</button>
 							  </div>
 							</form>
@@ -216,6 +220,7 @@ TO DO:
 				</div><!--contact-container-->
 			</div><!--CONATINER-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/scripts.js"></script>
 		</body>
 	</main><!-- #main -->
