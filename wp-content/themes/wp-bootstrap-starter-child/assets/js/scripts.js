@@ -1,3 +1,5 @@
+var global_msg = "";
+
 $("form").submit(function(event){
 	event.preventDefault();
 	$poop = {
@@ -8,25 +10,34 @@ $("form").submit(function(event){
 	};
 	var url = window.location.href;
 	var posting = $.post(url+ "wp-content/themes/wp-bootstrap-starter-child/test.php", $poop)
-	.done(function(data){
+	.done(function(ass){
+		global_msg=ass;
+		console.log(global_msg);
+		$("#btn-popper").popover("dispose")
 		$("#btn-popper").popover({
-			content: data,
-			placement: "left"
+			container: "body",
+			placement: "left",
+			trigger: "focus",
+			delay: 100,
+			content: ass
 		})
+		$("#btn-popper").popover("show");
 	})
+});
+
+$("#btn-popper").on('show.bs.popover', function () {
+	console.log("show");
+	//popover.setContent();
+});
+
+$('#btn-popper').on('hidden.bs.popover', function () {
+	console.log("hidden");
+ 	$("#btn-popper").popover("dispose")
 });
 
 $("#btn-popper").click(function() {
 	$("form:first").submit();
 })
-
-$('.popover-dismiss').popover({
-  trigger: 'focus'
-})
-
-// $("#btn-popper").click( function() {
-// 	("#btn-popper").popover('show')
-// });
 
 $(".scroll").click(function( event ){
 	$target = this.hash;
