@@ -1,4 +1,4 @@
-$("form:first").submit(function(event){
+$("form").submit(function(event){
 	event.preventDefault();
 	$poop = {
 		name	: event.currentTarget[0].value, 
@@ -9,12 +9,19 @@ $("form:first").submit(function(event){
 	var url = window.location.href;
 	var posting = $.post(url+ "wp-content/themes/wp-bootstrap-starter-child/test.php", $poop)
 	.done(function(data){
-		console.log("data loaded: " + data);
+		$("#btn-popper").popover({
+			content: data,
+			placement: "left"
+		})
 	})
 });
 
-$(function() {
-		$('[data-toggle="popover"]').popover();
+$("#btn-popper").click(function() {
+	$("form:first").submit();
+})
+
+$('.popover-dismiss').popover({
+  trigger: 'focus'
 })
 
 // $("#btn-popper").click( function() {
