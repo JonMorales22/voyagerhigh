@@ -76,9 +76,8 @@ Template: wp-bootstrap-starter
 		color: rgba(0,0,0,.125)
 	}
 
-	/*
-	Disables the arrow that bootstrap places on dropdowns by default
-	*/
+	/*Disables the arrow that bootstrap places on dropdowns by default*/
+	
 	.dropdown-toggle::after {
 	    display:none
 	}

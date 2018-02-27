@@ -10,8 +10,8 @@ $("form").submit(function(event){
 	};
 	var url = window.location.href;
 	var posting = $.post(url+ "wp-content/themes/wp-bootstrap-starter-child/test.php", $poop)
-	.done(function(ass){
-		global_msg=ass;
+	.done(function(resp){
+		console.log(resp);
 		console.log(global_msg);
 		$("#btn-popper").popover("dispose")
 		$("#btn-popper").popover({
@@ -19,11 +19,15 @@ $("form").submit(function(event){
 			placement: "left",
 			trigger: "focus",
 			delay: 100,
-			content: ass
+			content: resp
 		})
 		$("#btn-popper").popover("show");
 	})
 });
+
+// $(function () {
+//   $('[data-toggle="popover"]').popover()
+// })
 
 $("#btn-popper").on('show.bs.popover', function () {
 	console.log("show");
@@ -43,4 +47,5 @@ $(".scroll").click(function( event ){
 	$target = this.hash;
 	$target = $($target);
 	$('html,body').animate({scrollTop: $target.offset().top},500);
+	event.preventDefault();
 });

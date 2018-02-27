@@ -169,8 +169,8 @@ TO DO:
 						}
 					?>
 				</div><!--projects-container-->
-				<div id="contact" class="child-container contact">
-					<div class="container-title"><h1>Contact</h1></div>
+				<div class="child-container contact">
+					<div class="container-title"><h1 id="contact">Contact</h1></div>
 					<div class="wrapper">
 						<div class="child-element contact">
 							<div class="contact-info">
@@ -220,7 +220,7 @@ TO DO:
 					</div><!--wrapper-->
 				</div><!--contact-container-->
 			</div><!--CONATINER-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/scripts.js"></script>
 		</body>
