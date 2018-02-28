@@ -1,0 +1,10 @@
+@import url(/style.css);
+
+.app body {
+	background-image: none;
+	background-color: #ededed;
+}
+
+.poop{
+	color: #FFF;
+}
