@@ -21,7 +21,7 @@
 			   <div class="col">
 				   <div class="embed-responsive embed-responsive-4by3">
 				   		
-					   <iframe class="embed-responsive-item" src="<?php echo get_home_url(); ?>/apps/8puzzle.html"></iframe>
+					   <iframe class="embed-responsive-item" src="<?php echo get_home_url(); ?>/apps/8-puzzle-src/8puzzle.html"></iframe>
 				   </div>
 			   </div>
 			</div><!--row-->
