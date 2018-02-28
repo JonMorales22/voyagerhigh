@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>8 Puzzle</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
+
+    <!-- Custom styles for this template -->
+    <link href="8puzzle.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- <script src="../../assets/js/ie-emulation-modes-warning.js"></script>-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand">Jonathan Morales</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li> <a href="index.html">Work</a></li>
+            <li> <a href="assets/JonMorales_Resume.pdf">Resume</a></li>
+            <li  class="active"><a href="8puzzle.html">8 Puzzle</a></li>
+            <li> <a href="contact.html">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="gameboard-container">
+      <div id="gameboard"></div><!--/.gameboard -->
+      <div id="gameboard2"></div><!--/.gameboard2 -->
+    </div>
+
+    <div class="row">
+      <div class=col>
+        <div class="btn-group btn-group-lg" role="group">
+          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">About</button>
+          <button type="button" class="btn btn-default" onclick="doThings();">Find Goal</button>
+          <button type="button" class="btn btn-default" onclick="shuffleBoard();">Shuffle</button>
+          <button type="button" class="btn btn-default" onclick="up();">Up</button>
+          <button type="button" class="btn btn-default" onclick="down();">Down</button>
+          <button type="button" class="btn btn-default" onclick="left();">Left</button>
+          <button type="button" class="btn btn-default" onclick="right();">Right</button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal -->
+<div class="about-container">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">About</h4>
+      </div>
+      <div class="modal-body">
+
+          <h4>This Program:</h4>
+          <p><p>This is a javascript implementation of the A* Search algorithm to solve an 8 puzzle. A* Search takes 2 things into consideration in order to arrive at a solution: the heurstics and cost of each move. In this implementation, the manhattan distance is used to calculate the heuristic value of each node, and the cost is simply the number of moves needed to arrive to a paticular node. The code for this project can be viewed <a href="https://github.com/JonMorales22/8BitPuzzle-Javascript">here</a>.
+
+          <h4>8 Puzzle Overview:</h4>
+          <p><p>The 8 puzzle is a 3x3 grid of tiles with 8 of its 9 tiles occupied. This leaves a "free space" (represented by the number 0 in this implementation) that one can manipulate in order to move around and shuffle the other tiles. The objective is to manipulate the tiles of the puzzle until it matches the tiles of the "goal." There are 9!/2 (181,440)  possible combinations that one can achieve from any given state of the 8 puzzle. This is nothing compared to the 15 puzzle, the 8 puzzle's larger counterpart, which has approximately 1.5*10^13 possible states. 
+
+          <p><p>These puzzles are a part of a set of problems which are referred to as "NP-Complete." NP-Complete means that it is easy to check a solution to see if it is correct, but it is diffult (computationally) to arrive to a correct solution. This set includes many other games like sodoku and battleships, as well as scientific and mathematic problems such as protein folding and vehicle routing. This is a huge topic of research in Computer Science today and anyone that can find an efficient way to solve NP problems would gain much glory and fame. <a href="https://youtu.be/YX40hbAHx3s">This</a> video provides a great overview of the topic.
+            
+          <h4>Button Functionality:</h4>
+          <p><p><b>Shuffle:<b> Randomly shuffles the board 1000 ties
+          <p><b>Find Goal:<b> Attempts to find path to goal
+          <p><b>Up:<b> Moves the hole up
+          <p><b>Down:<b> Moves the hole down
+          <p><b>Left:<b> Moves the hole left
+          <p><b>Right:<b> Moves the hole right
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="8puzzle.js"></script>
+  </body>
+</html>

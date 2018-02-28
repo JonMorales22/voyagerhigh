@@ -1,0 +1,49 @@
+
+body {
+  padding-top: 50px;
+}
+
+
+.modal-backdrop {
+  z-index: 0;
+}
+
+.modal-dialog{
+	padding-top: 10px;
+	width: 800px;
+}
+
+.row {
+	width: 100%;
+	position: fixed;
+	text-align: center;
+	bottom: 60px;
+}
+
+#gameboard {
+	text-align: center;
+}
+
+#gameboard2 {
+	height: 60px;
+	padding-top:	10px;
+	text-align:	center;
+}
+
+#child {
+	width: 	100px;
+	padding: 5px;
+	display: inline-block;
+	text-align: center;
+}
+
+#board {
+	width: 	40px;
+	text-align: center;
+}
+
+#values {
+	width: 	40px;
+	text-align: center;
+	display: block-inline;
+}
