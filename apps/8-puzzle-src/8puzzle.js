@@ -4,49 +4,79 @@ $(document).ready(function(){
 		start = new Board([1,2,3,8,0,4,7,6,5],0,1000,-1,null);
 		start.findSpace();
 		goal = [1,2,3,8,0,4,7,6,5];
-		//displayBoard();
+		displayStartBoard('.gameboard-body.start');
+		displayGoalBoard('.gameboard-body.goal');
 	});
 //######################################################//
 //######################################################//
 //######### FOR DISPLAYING ON WEBSITE ##################//
 //######################################################//
 //######################################################//
-	function up()
+	function upBtn()
 	{
 		var b = start.moveUp();
 		start = b;
-		displayBoard();
+		displayStartBoard();
 	}
-	function down()
+	function downBtn()
 	{
 		var b = start.moveDown();
 		start = b;
-		displayBoard();
+		displayStartBoard();
 	}
-	function left()
+	function leftBtn()
 	{
 		var b = start.moveLeft();
 		start = b;
-		displayBoard();		
+		displayStartBoard();		
 	}
-	function right()
+	function rightBtn()
 	{
 		var b = start.moveRight();
 		start = b;
-		displayBoard();	
+		displayStartBoard();	
 	}
 
-	function displayBoard()
+	function shuffleBtn()
 	{
-		var node = document.getElementById("gameboard");
-		node.innerHTML = "<div id='child'><div id='values'>Start" + "<div id='board'>"+ start.boardToString() +"</div></div></div>";
-		node.innerHTML += "<div id='child'><div id='values'>Goal" + "<div id='board'>"+ arrToString(goal) +"</div></div></div>";
+		shuffleBoard();
+		displayStartBoard();
+	}
+
+	function findGoalBtn()
+	{
+		$element = $('.sol-path');
+		$element.text('');
+		var solArr = doThings();
+		if(solArr[0]==true)
+    	{
+    		solPath = solArr[1];
+    		$element.append("The Path to the Goal was found in " + solPath.length + " moves.");
+    		$element.append("<div class='gameboard-body child'>" + start.boardToString() + "</div>");
+    		for(var i=solPath.length-1;i>=0;i--)
+    		{
+    			$element.append("<div class='gameboard-body child'>" + arrToString(solPath[i]) + "</div>");
+    		}
+    	}
+   		else
+   		{
+   			$element.append("Goal could not be reached...");
+   		}
+	}
+
+	function displayStartBoard()
+	{
+		$('.gameboard-body.start').text(start.boardToString());
+	}
+
+	function displayGoalBoard()
+	{
+		$('.gameboard-body.goal').text(start.boardToString());
 	}
 
 	function clearSolPath()
 	{
-		var node2 = document.getElementById("gameboard2");
-		node2.innerHTML = "";
+		$('.sol-path').text('');
 	}
 
 	function displaySolutionPath(solArr)
@@ -74,9 +104,9 @@ $(document).ready(function(){
 //######################################################//
     function doThings(){
     	var search = new Search(goal,start,0,50);
-    	var solArr = search.findGoal();
+    	return solArr = search.findGoal();
 
-    	displaySolutionPath(solArr);
+    	//displaySolutionPath(solArr);
     }
 
 	function shuffleBoard()
@@ -90,7 +120,6 @@ $(document).ready(function(){
 			b=children[rand];
 		}
 		start = b;
-		displayBoard();
 	}
 
     function arrToString(arr)

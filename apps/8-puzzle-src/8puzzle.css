@@ -16,17 +16,17 @@ p{
 	background-color: #ededed;
 }
 
-.oi.oi-chevron-left, .oi.oi-chevron-right{
-	margin: 15px;
-}
-
 .gameboard{
 	display: inline-block;
 	margin: 0 5px 0 5px;
 }
 
 .gameboard-body{
-	width: 50px;
+	width: 39px;
 	text-align: left;
 	margin: auto;
+}
+
+.gameboard-body.child{
+	margin: 10px auto;
 }

@@ -37,39 +37,37 @@
       <div class="row">
         <div class="col">
           <div class="game-buttons-holder">
+            <h4>Controls</h4>
             <div class="arrow-buttons">
-              <span class="oi oi-chevron-top"></span>
+              <button type="button" class="btn btn-primary btn-sm" onclick="upBtn()"><span class="oi oi-chevron-top"></span></button>
               <p>
-                <span class="oi oi-chevron-left"></span>
-                <span class="oi oi-chevron-right"></span>
+                <button type="button" class="btn btn-primary btn-sm" onclick="leftBtn()"><span class="oi oi-chevron-left"></span></button>
+                <button type="button" class="btn btn-primary btn-sm" onclick="rightBtn()"><span class="oi oi-chevron-right"></span></button>
               </p>
-              <span class="oi oi-chevron-bottom"></span>
+              <button type="button" class="btn btn-primary btn-sm" onclick="downBtn()"><span class="oi oi-chevron-bottom"></span></button>
             </div>
           </div>
-          <button type="button" class="btn btn-secondary">Shuffle Board</button>
-          <p><button type="button" class="btn btn-secondary">Find Goal</button></p>
+          <button type="button" class="btn btn-secondary" onclick="shuffleBtn()">Shuffle Board</button>
+          <p><button type="button" class="btn btn-secondary" onclick="findGoalBtn()">Find Goal</button></p>
         </div> <!-- .col -->
         <div class="col">
           <div class="gameboard">
-            <h4>Start Board</h4>
-            <div class="gameboard-body">
-              <p>1 2 3</p>
-              <p>4 5 6</p>
-              <p>7 8  </p>
-            </div>
+            <h4>Start</h4>
+            <div class="gameboard-body start"></div>
           </div>      
-          <div class="gameboard">
-            <h4>Goal Board</h4>
-            <div class="gameboard-body">
-              <p>1 2 3</p>
-              <p>4 5 6</p>
-              <p>7 8  </p>
-            </div>
-          </div>
         </div> <!-- .col -->
+        <div class='col'>
+            <div class="gameboard">
+              <h4>Goal</h4>
+              <div class="gameboard-body goal"></div>
+            </div>
+        </div><!-- .col -->
       </div><!-- .row -->
+      <div class="row justify-content-center">
+        <div class="col"><h1>Solution Path</h1></div>
+      </div>
       <div class="row">
-        <h1>Solution Path</h1>
+        <div class='col sol-path'></div>
       </div>
     </div> <!-- .container-fluid -->
 
