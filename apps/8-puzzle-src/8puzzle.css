@@ -1,49 +1,32 @@
 
-body {
-  padding-top: 50px;
+
+p{
+	margin-bottom: 0;
 }
 
-
-.modal-backdrop {
-  z-index: 0;
+.row{
+	margin-top: 20px;
 }
 
-.modal-dialog{
-	padding-top: 10px;
-	width: 800px;
-}
-
-.row {
-	width: 100%;
-	position: fixed;
-	text-align: center;
-	bottom: 60px;
-}
-
-#gameboard {
+.col{
 	text-align: center;
 }
 
-#gameboard2 {
-	height: 60px;
-	padding-top:	10px;
-	text-align:	center;
+.container-fluid{
+	background-color: #ededed;
 }
 
-#child {
-	width: 	100px;
-	padding: 5px;
+.oi.oi-chevron-left, .oi.oi-chevron-right{
+	margin: 15px;
+}
+
+.gameboard{
 	display: inline-block;
-	text-align: center;
+	margin: 0 5px 0 5px;
 }
 
-#board {
-	width: 	40px;
-	text-align: center;
-}
-
-#values {
-	width: 	40px;
-	text-align: center;
-	display: block-inline;
+.gameboard-body{
+	width: 50px;
+	text-align: left;
+	margin: auto;
 }

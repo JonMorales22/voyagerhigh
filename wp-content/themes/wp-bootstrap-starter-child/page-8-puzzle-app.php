@@ -19,9 +19,14 @@
 		<div class="container-fluid">
 			<div class="row justify-content-md-center">
 			   <div class="col">
-				   <div class="embed-responsive embed-responsive-4by3">
-				   		
-					   <iframe class="embed-responsive-item" src="<?php echo get_home_url(); ?>/apps/8-puzzle-src/8puzzle.html"></iframe>
+			   	   <div class="content">				      	
+			   	   		<?php 
+				      		$page = get_post($id=127);
+				      		echo '<h1>' . $page->post_title . '<h1>';
+				    	?>
+				   		<div class="embed-responsive embed-responsive-4by3">
+					       <iframe class="embed-responsive-item" src="<?php echo get_home_url(); ?>/apps/8-puzzle-src/8puzzle.html"></iframe>
+				       </div>
 				   </div>
 			   </div>
 			</div><!--row-->
