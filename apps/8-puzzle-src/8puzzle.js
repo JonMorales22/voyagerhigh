@@ -1,4 +1,6 @@
-
+var traverseVar;
+var solArr;
+var startBoard;
 $(document).ready(function(){
 	//initializtion
 		start = new Board([1,2,3,8,0,4,7,6,5],0,1000,-1,null);
@@ -43,16 +45,36 @@ $(document).ready(function(){
 		displayStartBoard();
 	}
 
+	function traverseBtn()
+	{
+		if(solArr[1]!=null)
+		{
+			fuck = solArr[1].length-1;		
+			clearInterval(traverseVar);
+			$('.solution').text(arrToString(startBoard));
+			traverseVar = setInterval(traverse, 1000);
+		}
+		else
+		{
+			console.log("No solution path!");
+		}
+	}
+
+	function stopTraverseBtn()
+	{
+		clearInterval(traverseVar);
+	}
+
 	function findGoalBtn()
 	{
 		$element = $('.sol-path');
 		$element.text('');
-		var solArr = doThings();
+		doThings();
 		if(solArr[0]==true)
     	{
     		solPath = solArr[1];
     		$('.num-path-holder').text("The Path to the Goal was found in " + solPath.length + " moves.");
-    		$element.append("<div class='card gameboard'><div class='card-body'><h6 class='card-title'>0:</h6><p class='card-text gameboard-body'>" + start.boardToString() + "</p></div></div>");
+    		$element.append("<div class='card gameboard'><div class='card-body'><h6 class='card-title'>0:</h6><p class='card-text gameboard-body'>" + arrToString(startBoard) + "</p></div></div>");
     		for(var i=solPath.length-1;i>=0;i--)
     		{
     			$element.append("<div class='card gameboard'><div class='card-body'><h6 class='card-title'>" + (solPath.length-i) + ":</h6><p class='card-text gameboard-body'>" + arrToString(solPath[i]) + "</p></div></div>");
@@ -62,6 +84,20 @@ $(document).ready(function(){
    		{
    			$element.append("Goal could not be reached...");
    		}
+	}
+
+	function traverse()
+	{
+		if(fuck>=0)
+		{
+			//solPath = solArr[1];
+			$('.solution').text(arrToString(solPath[fuck]));
+			fuck--;
+		}
+		else if(fuck==-1)
+		{
+			console.log("End of traversal");
+		}			
 	}
 
 	function displayStartBoard()
@@ -83,9 +119,11 @@ $(document).ready(function(){
 //############### START ALGORITHM ######################//
 //######################################################//
 //######################################################//
+
     function doThings(){
+    	startBoard = start.board;
     	var search = new Search(goal,start,0,50);
-    	return solArr = search.findGoal();
+    	solArr = search.findGoal();
 
     	//displaySolutionPath(solArr);
     }

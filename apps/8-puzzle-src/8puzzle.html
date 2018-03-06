@@ -54,7 +54,7 @@
           </div>
         </div> <!-- .col rounded-->
         <div class="col rounded">
-          <h6>Start:</h6>
+          <h6>Start</h6>
           <div class="card gameboard">
             <div class="card-body">
               <p class="card-text gameboard-body start"></p>
@@ -62,7 +62,7 @@
           </div>
         </div> <!-- .col rounded -->
         <div class="col rounded">
-          <h6>Goal:</h6>
+          <h6>Goal</h6>
           <div class="card gameboard">
             <div class="card-body">
               <p class="card-text gameboard-body goal"></p>
@@ -71,14 +71,17 @@
         </div><!-- .col rounded -->
       </div><!-- .row rounded -->
       <div class="row rounded justify-content-center">
-        <div class="col rounded"><h6>Solution:</h6>
+        <div class="col rounded"><h6>Solution</h6>
           <div class="card gameboard">
             <div class="card-body">
-              <p class="card-text gameboard-body start solution"></p>
+              <p class="card-text gameboard-body goal solution"></p>
             </div>
           </div>
           <div class='btns-holder'>
-          <a class="btn btn-primary" data-toggle="collapse" href="#collapseTest" role="button" aria-expanded="false" aria-controls="collapseTest">Show Full Path</a></div>
+            <button type="button" class="btn btn-primary" onclick="traverseBtn()">Traverse</button>
+            <button type="button" class="btn btn-primary" onclick="stopTraverseBtn()">Stop</button>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseTest" role="button" aria-expanded="false" aria-controls="collapseTest">Show Full Path</a>
+          </div>
           <div class="num-path-holder"></div>
         </div><!-- .col rounded -->
       </div><!-- .row rounded -->

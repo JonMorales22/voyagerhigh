@@ -24,7 +24,8 @@ h6{
 
 .col.rounded{
 	border-style: solid;
-	border-color: #11111129;
+	border-width: 1px;
+	border-color: rgba(0,0,0,.125);
 }
 
 .col.rounded.sol-path{
@@ -44,7 +45,6 @@ h6{
 .gameboard-body{
 	width: 39px;
 	margin: auto;
-	font-family: 'Comfortaa', cursive;
 }
 
 .gameboard-body.child{
