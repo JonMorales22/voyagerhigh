@@ -12,8 +12,9 @@
     <title>8 Puzzle</title>
 
     <!-- Bootstrap core CSS -->
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"/>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa|Work+Sans|Bungee">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
 
@@ -34,10 +35,10 @@
 
   <body>
     <div class="container-fluid">
-      <div class="row">
-        <div class="col">
-          <div class="game-buttons-holder">
-            <h4>Controls</h4>
+      <div class="row rounded">
+        <div class="col rounded">
+          <div class="btns-holder arrow-btns">
+            <h6>Controls</h6>
             <div class="arrow-buttons">
               <button type="button" class="btn btn-primary btn-sm" onclick="upBtn()"><span class="oi oi-chevron-top"></span></button>
               <p>
@@ -47,27 +48,44 @@
               <button type="button" class="btn btn-primary btn-sm" onclick="downBtn()"><span class="oi oi-chevron-bottom"></span></button>
             </div>
           </div>
-          <button type="button" class="btn btn-secondary" onclick="shuffleBtn()">Shuffle Board</button>
-          <p><button type="button" class="btn btn-secondary" onclick="findGoalBtn()">Find Goal</button></p>
-        </div> <!-- .col -->
-        <div class="col">
-          <div class="gameboard">
-            <h4>Start</h4>
-            <div class="gameboard-body start"></div>
-          </div>      
-        </div> <!-- .col -->
-        <div class='col'>
-            <div class="gameboard">
-              <h4>Goal</h4>
-              <div class="gameboard-body goal"></div>
+          <div class="btns-holder">
+            <button type="button" class="btn btn-primary" onclick="shuffleBtn()">Shuffle</button>
+            <button type="button" class="btn btn-primary" onclick="findGoalBtn()">Find Goal</button>
+          </div>
+        </div> <!-- .col rounded-->
+        <div class="col rounded">
+          <h6>Start:</h6>
+          <div class="card gameboard">
+            <div class="card-body">
+              <p class="card-text gameboard-body start"></p>
             </div>
-        </div><!-- .col -->
-      </div><!-- .row -->
-      <div class="row justify-content-center">
-        <div class="col"><h1>Solution Path</h1></div>
-      </div>
-      <div class="row">
-        <div class='col sol-path'></div>
+          </div>
+        </div> <!-- .col rounded -->
+        <div class="col rounded">
+          <h6>Goal:</h6>
+          <div class="card gameboard">
+            <div class="card-body">
+              <p class="card-text gameboard-body goal"></p>
+            </div>
+          </div>
+        </div><!-- .col rounded -->
+      </div><!-- .row rounded -->
+      <div class="row rounded justify-content-center">
+        <div class="col rounded"><h6>Solution:</h6>
+          <div class="card gameboard">
+            <div class="card-body">
+              <p class="card-text gameboard-body start solution"></p>
+            </div>
+          </div>
+          <div class='btns-holder'>
+          <a class="btn btn-primary" data-toggle="collapse" href="#collapseTest" role="button" aria-expanded="false" aria-controls="collapseTest">Show Full Path</a></div>
+          <div class="num-path-holder"></div>
+        </div><!-- .col rounded -->
+      </div><!-- .row rounded -->
+      <div class="row rounded collapse" id="collapseTest">
+        <div class='col rounded sol-path'>
+          Nothing here!
+        </div>
       </div>
     </div> <!-- .container-fluid -->
 
@@ -75,9 +93,9 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script src="8puzzle.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="8puzzle.js"></script>
   </body>
 </html>

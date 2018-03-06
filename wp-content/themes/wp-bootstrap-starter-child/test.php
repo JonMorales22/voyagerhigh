@@ -52,7 +52,7 @@ else if(!filter_var($email, FILTER_VALIDATE_EMAIL))
 }
 else
 {
-	//$sent = mail($out_email, $sub, $msg, $headers); <-- UNCOMMENT THIS OUT LATER
+	$sent = mail($out_email, $sub, $msg, $headers);
 	$sent = true;
 	if($sent)
 	{

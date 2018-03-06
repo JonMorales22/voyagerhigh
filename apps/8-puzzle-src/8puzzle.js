@@ -51,11 +51,11 @@ $(document).ready(function(){
 		if(solArr[0]==true)
     	{
     		solPath = solArr[1];
-    		$element.append("The Path to the Goal was found in " + solPath.length + " moves.");
-    		$element.append("<div class='gameboard-body child'>" + start.boardToString() + "</div>");
+    		$('.num-path-holder').text("The Path to the Goal was found in " + solPath.length + " moves.");
+    		$element.append("<div class='card gameboard'><div class='card-body'><h6 class='card-title'>0:</h6><p class='card-text gameboard-body'>" + start.boardToString() + "</p></div></div>");
     		for(var i=solPath.length-1;i>=0;i--)
     		{
-    			$element.append("<div class='gameboard-body child'>" + arrToString(solPath[i]) + "</div>");
+    			$element.append("<div class='card gameboard'><div class='card-body'><h6 class='card-title'>" + (solPath.length-i) + ":</h6><p class='card-text gameboard-body'>" + arrToString(solPath[i]) + "</p></div></div>");
     		}
     	}
    		else
@@ -77,25 +77,6 @@ $(document).ready(function(){
 	function clearSolPath()
 	{
 		$('.sol-path').text('');
-	}
-
-	function displaySolutionPath(solArr)
-	{
-    	clearSolPath();
-    	var node2 = document.getElementById("gameboard2");
-    	if(solArr[0]==true)
-    	{
-    		solPath = solArr[1];
-    		node2.innerHTML += "<div>The Path to the Goal was found in " + solPath.length + " moves.</div>";
-    		for(var i=solPath.length-1;i>0;i--)
-    		{
-    			node2.innerHTML+= "<div id='child'><div id='board'>" + arrToString(solPath[i]) +"</div></div>";
-    		}
-    	}
-   		else
-   		{
-   			node2.innerHTML = "Goal could not be reached...";
-   		}
 	}
 //######################################################//
 //######################################################//

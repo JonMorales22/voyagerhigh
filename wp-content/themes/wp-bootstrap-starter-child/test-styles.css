@@ -1,10 +1,30 @@
 @import url(/style.css);
 
-.app body {
+.content{
+	text-align: center;
+}
+
+.app {
 	background-image: none;
 	background-color: #ededed;
 }
 
 .poop{
 	color: #FFF;
+}
+
+.embed-responsive{
+	height: 625px;
+}
+
+h1.container-title{
+	font-size: 60px;
+}
+
+@media only screen and (min-width: 768px)
+{
+	.embed-responsive{
+		height: 500px;
+	}
+
 }

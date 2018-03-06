@@ -23,7 +23,7 @@ TO DO:
 
 ?>
 	<head>
-		<link href="https://fonts.googleapis.com/css?family=Comfortaa|Work+Sans|Bungee" rel="stylesheet"> 
+		<!--<link href="https://fonts.googleapis.com/css?family=Comfortaa|Work+Sans|Bungee" rel="stylesheet">-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"/>
 		<?php
 			wp_head();
@@ -203,7 +203,7 @@ TO DO:
 							    <input class="form-control" id="exampleFormControlInput1" type="text" placeholder="Prove you're human: 2+2=?" required>
 							  </div>
 							  <div class="button-holder">
-							  		<a tabindex="0" id="btn-popper" type="submit" class="btn btn-primary btn-sm">Send</a>
+							  		<a tabindex="0" id="btn-popper" class="btn btn-primary btn-sm">Send</a>
 								  	<button type="reset" class="btn btn-primary btn-sm">Clear</button>
 							  </div>
 							</form>

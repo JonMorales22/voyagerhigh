@@ -13,6 +13,7 @@
 <head>
 	<?php wp_head(); ?>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <main>
@@ -20,16 +21,22 @@
 		<div class="container-fluid">
 			<div class="row justify-content-md-center">
 			   <div class="col">
-			   	   <div class="content">				      	
+			   	   <div class="content">
+			   	      <div class='header-holder'>				      	
 			   	   		<?php 
 				      		$page = get_post($id=127);
 				      		$page_content = $page->post_content;
-				      		echo '<h1>' . $page->post_title . '</h1>';
+				      		echo '<h1 class="container-title">' . $page->post_title . '</h1>';
 				      		//echo "<div class='post-contents'>" . $page->post_content . "</div>";
 				    	?>
-				    	<!-- Button trigger modal -->
+					   </div>
+				   		<div class="embed-responsive embed-responsive-21by9">
+					       <iframe src="<?php echo get_home_url(); ?>/apps/8-puzzle-src/8puzzle.html"></iframe>
+				       </div>
+				       	<!-- Button trigger modal -->
 						<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Info</button>
-						<div id="aboutModal" class="modal fade in bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+				   </div><!-- .content -->
+				   			   			<div id="aboutModal" class="modal fade in bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 						  <div class="modal-dialog modal-lg">
 						    <div class="modal-content">
 						    	<div class="modal-header">
@@ -47,12 +54,8 @@
 						    </div>
 						  </div>
 						</div> <!--end modal-->
-				   		<div class="embed-responsive embed-responsive-4by3">
-					       <iframe class="embed-responsive-item" src="<?php echo get_home_url(); ?>/apps/8-puzzle-src/8puzzle.html"></iframe>
-				       </div>
-				   </div>
-			   </div>
-			</div><!--row-->
+			   </div><!--.col-->
+			</div><!--.row-->
 		</div>
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -63,5 +66,5 @@
 
 
 
-<?php get_footer(); ?>
+<?php wp_footer()?>
 </html>
