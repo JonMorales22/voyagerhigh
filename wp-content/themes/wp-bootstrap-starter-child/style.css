@@ -143,11 +143,15 @@ Template: wp-bootstrap-starter
 	}
 
 	.about-title{
-		padding-top: 115px;
+		padding-top: 95px;
 	}
 	.about-title h1{
 		font-size: 70px;
 		color: #318171;
+	}
+
+	.card-holder{
+		margin: 10px;
 	}
 
 	.card.about {
