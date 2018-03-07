@@ -24,7 +24,7 @@
 			   	   <div class="content">
 			   	      <div class='header-holder'>				      	
 			   	   		<?php 
-				      		$page = get_post($id=127);
+				      		$page = get_post($id=7); //on local id=127
 				      		$page_content = $page->post_content;
 				      		echo '<h1 class="container-title">' . $page->post_title . '</h1>';
 				      		//echo "<div class='post-contents'>" . $page->post_content . "</div>";
