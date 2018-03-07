@@ -1,29 +1,29 @@
 var global_msg = "";
 
-$("form").submit(function(event){
-	event.preventDefault();
-	$poop = {
-		name	: event.currentTarget[0].value, 
-		email	: event.currentTarget[1].value,
-		msg		: event.currentTarget[2].value,
-		proof	: event.currentTarget[3].value
-	};
-	var url = window.location.href;
-	var posting = $.post(url+ "wp-content/themes/wp-bootstrap-starter-child/test.php", $poop)
-	.done(function(resp){
-		console.log(resp);
-		console.log(global_msg);
-		$("#btn-popper").popover("dispose")
-		$("#btn-popper").popover({
-			container: "body",
-			placement: "left",
-			trigger: "focus",
-			delay: 100,
-			content: resp
-		})
-		$("#btn-popper").popover("show");
-	})
-});
+// $("form").submit(function(event){
+// 	event.preventDefault();
+// 	$poop = {
+// 		name	: event.currentTarget[0].value, 
+// 		email	: event.currentTarget[1].value,
+// 		msg		: event.currentTarget[2].value,
+// 		proof	: event.currentTarget[3].value
+// 	};
+// 	var url = window.location.href;
+// 	var posting = $.post(url+ "wp-content/themes/wp-bootstrap-starter-child/test.php", $poop)
+// 	.done(function(resp){
+// 		console.log(resp);
+// 		console.log(global_msg);
+// 		$("#btn-popper").popover("dispose")
+// 		$("#btn-popper").popover({
+// 			container: "body",
+// 			placement: "left",
+// 			trigger: "focus",
+// 			delay: 100,
+// 			content: resp
+// 		})
+// 		$("#btn-popper").popover("show");
+// 	})
+// });
 
 // $(function () {
 //   $('[data-toggle="popover"]').popover()

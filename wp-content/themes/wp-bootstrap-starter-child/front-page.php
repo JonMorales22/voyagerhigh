@@ -184,19 +184,19 @@ TO DO:
 							</div>
 						</div><!--child-element contact-->
 						<div class="form-container">
-							<form id="target">
+							<form id="target" action="https://formspree.io/jonmorales2.718@gmail.com" method="POST">
 							<h2>Send a message:</h2>
 							  <div class="form-group">
 							    <label for="name"></label>
-							    <input class="form-control" id="exampleFormControlInput1" type="text" placeholder="Your name" required>
+							    <input class="form-control" id="exampleFormControlInput1" name="name" type="text" placeholder="Your name" required>
 							  </div>
 							  <div class="form-group">
 							    <label for="email"></label>
-							    <input class="form-control" id="exampleFormControlInput1" type="email" placeholder="email@email" required>
+							    <input class="form-control" id="exampleFormControlInput1" name="_replyto" type="email" placeholder="email@email" required>
 							  </div>
 							  <div class="message">
 							    <label for="exampleFormControlTextarea1"></label>
-							    <textarea class="form-control" id="exampleFormControlTextarea1" type="text" placeholder="Your message" rows="10" required></textarea>
+							    <textarea class="form-control" id="exampleFormControlTextarea1" name="send" type="text" placeholder="Your message" rows="10" required></textarea>
 							  </div>
 							  <div class="form-group">
 							    <label for="Verification"></label>
