@@ -55,7 +55,7 @@
         </div> <!-- .col rounded-->
         <div class="col rounded">
           <h6>Start</h6>
-          <div class="card gameboard">
+          <div class="card gameboard display">
             <div class="card-body">
               <p class="card-text gameboard-body start"></p>
             </div>
@@ -63,7 +63,7 @@
         </div> <!-- .col rounded -->
         <div class="col rounded">
           <h6>Goal</h6>
-          <div class="card gameboard">
+          <div class="card gameboard display">
             <div class="card-body">
               <p class="card-text gameboard-body goal"></p>
             </div>
@@ -78,7 +78,7 @@
             </div>
           </div>
           <div class='btns-holder'>
-            <button type="button" class="btn btn-primary" onclick="traverseBtn()">Traverse</button>
+            <button id="traverseBtn" type="button" class="btn btn-primary" onclick="traverseBtn()">Traverse</button>
             <button type="button" class="btn btn-primary" onclick="stopTraverseBtn()">Stop</button>
             <a class="btn btn-primary" data-toggle="collapse" href="#collapseTest" role="button" aria-expanded="false" aria-controls="collapseTest">Show Full Path</a>
           </div>

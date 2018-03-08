@@ -53,6 +53,7 @@ $(document).ready(function(){
 			clearInterval(traverseVar);
 			$('.solution').text(arrToString(startBoard));
 			traverseVar = setInterval(traverse, 1000);
+			$('#traverseBtn').prop("disabled", true);
 		}
 		else
 		{
@@ -63,6 +64,7 @@ $(document).ready(function(){
 	function stopTraverseBtn()
 	{
 		clearInterval(traverseVar);
+		$("#traverseBtn").prop("disabled", false);
 	}
 
 	function findGoalBtn()
@@ -114,6 +116,7 @@ $(document).ready(function(){
 	{
 		$('.sol-path').text('');
 	}
+
 //######################################################//
 //######################################################//
 //############### START ALGORITHM ######################//

@@ -159,7 +159,7 @@ TO DO:
 										$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); 
 										echo "<img src='" . $featured_img_url . "'>";
 									}
-									echo "<div class='card-text'>"; 
+									echo "<div class='card-text block'>"; 
 									echo get_the_content();
 									echo "</div>";
 									echo "</div>";//<----end card-body ---->

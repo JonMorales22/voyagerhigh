@@ -53,6 +53,8 @@ Template: wp-bootstrap-starter
 		padding-top: 15px;
 	}
 
+
+
 	#dropdownMenuButton{
 		width: 50px;
 		position: fixed;
@@ -165,6 +167,10 @@ Template: wp-bootstrap-starter
 		width: 245px;
 	}
 
+	.card-text.block{
+		padding-right: 1rem;
+	}
+
 
 	.card-body.about{
 		padding: 8px;
@@ -180,6 +186,10 @@ Template: wp-bootstrap-starter
 
 	.card-text.about li {
 		padding: 0;
+	}
+
+	.card-btn{
+		margin-bottom: 10px;
 	}
 
 	.block{
@@ -346,7 +356,7 @@ Template: wp-bootstrap-starter
 	}
 
 	.card-text.about{
-		width: 245px;
+		width: 260px;
 	}
 
 	.card.about{

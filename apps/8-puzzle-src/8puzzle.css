@@ -32,6 +32,10 @@ h6{
 	margin: 0;
 }
 
+.btn.btn-primary{
+	margin: 5px 0;
+}
+
 .btns-holder{
 	margin: 10px 0 10px 0;
 }
@@ -49,4 +53,8 @@ h6{
 
 .gameboard-body.child{
 	margin: 10px auto;
+}
+
+.card.gameboard.display{
+	margin-bottom: 10px;
 }
