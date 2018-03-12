@@ -43,7 +43,7 @@ $(document).ready(function(){
 	{
 		shuffleBoard();
 		displayStartBoard();
-		prettify();
+		//prettify();
 	}
 
 	function traverseBtn()
@@ -118,12 +118,12 @@ $(document).ready(function(){
 		$('.sol-path').text('');
 	}
 
-	function prettify()
-	{
-		$elem = $(".test");
-		//$elem.css({backgroundColor: "#ff0000"});
-		$elem.css("color", "blue");
-	}
+	// function prettify()
+	// {
+	// 	$elem = $(".test");
+	// 	//$elem.css({backgroundColor: "#ff0000"});
+	// 	$elem.css("color", "blue");
+	// }
 //######################################################//
 //######################################################//
 //############### START ALGORITHM ######################//

@@ -26,5 +26,5 @@
 
 <body class="page">
     <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Jon Morales</a>
+      <a class="navbar-brand" href="<?php echo get_home_url(); ?>">Jon Morales - Portfolio</a>
     </nav>

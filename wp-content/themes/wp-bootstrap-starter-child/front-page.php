@@ -175,7 +175,7 @@ TO DO:
 						<div class="child-element contact">
 							<div class="contact-info">
 									<p><span class="oi oi-phone"></span>570-977-2847</p>
-									<a href="mailto:jonmorales2.718@gmail.com">
+									<a class="front-page" href="mailto:jonmorales2.718@gmail.com">
 										<p>
 											<span class="oi oi-envelope-closed"></span>
 											JonMorales2.718@gmail.com
@@ -207,7 +207,7 @@ TO DO:
 								<!--data-container="body" data-toggle="popover" data-trigger="focus" data-placement="left"-->
 						</div><!--form container-->
 						<div id="scrollTop" class="back-to-top">
-							<a class="scroll" href="#home">
+							<a class="front-page scroll" href="#home">
 								<p>
 									<span class="oi oi-chevron-top"></span>
 									Back to Top

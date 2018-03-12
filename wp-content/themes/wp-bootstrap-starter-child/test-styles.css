@@ -17,7 +17,12 @@ body.page{
 }
 
 h1.container-title{
-	font-size: 60px;
+	font-size: 3rem;
+}
+
+.btn.btn-primary.info
+{
+	margin-top: 10px;
 }
 
 
@@ -25,15 +30,14 @@ h1.container-title{
 .content.rounded{
 	background-color: #EDEDED;
 	margin: 200px auto 0 auto;
-	width: 500px;
 }
 
-.content a{
+a.return-home {
 	color: #111;
 	display: inline-block;
 }
 
-.content a:hover{
+a.return-home :hover{
 	color: #80BBB0FF;
 	text-decoration: none;
 }
@@ -44,10 +48,22 @@ h1.container-title{
 	margin-bottom: 20px;
 }
 
+h6.return-home{
+	color: inherit;
+}
+
 @media only screen and (min-width: 768px)
 {
 	.embed-responsive{
 		height: 500px;
+	}
+
+}
+
+@media only screen and (min-width: 768px)
+{
+	.embed-responsive{
+		height: 530px;
 	}
 
 }

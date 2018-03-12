@@ -13,7 +13,7 @@ function enqueue_custom_styles()
 
 	wp_enqueue_style('iconic-lib', 'https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css');
 
-	if(is_page($page = '8-puzzle-app')||is_page($page='thanks'))
+	if(is_page($page = '8-puzzle-app')||is_page($page = 'thanks')|| is_404() )
 	{
 		wp_enqueue_style('8-puzzle-styles', '/wp-content/themes/wp-bootstrap-starter-child/test-styles.css');
 	}

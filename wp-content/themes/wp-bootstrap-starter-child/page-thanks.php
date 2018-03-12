@@ -5,10 +5,10 @@
 				<div class="row justify-content-md-center">
 					<div class="col justify-content-md-center">
 						<div class="content rounded">
-							<h1 class="display-4">Thank you for your message!!</h1>
+							<h1 class="display-4">Thanks for the message!!</h1>
 							<h6>I'll get back to you as soon as possible.</h6>
-							<a href="<?php echo get_home_url(); ?>/">
-								<h6>Back to Porftolio</h6>
+							<a class="return-home" href="<?php echo get_home_url(); ?>/">
+								<h6 class="return-home">Back to Porftolio</h6>
 								<span class="oi oi-arrow-circle-left"></span>
 							</a>
 						</div>
