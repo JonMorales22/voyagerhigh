@@ -7,7 +7,7 @@
 						<div class="content rounded">
 							<h1 class="display-4">Page not found!</h1>
 							<h6>Sorry about that...</h6>
-							<a href="<?php echo get_home_url(); ?>/">
+							<a class ="return-home" href="<?php echo get_home_url(); ?>/">
 								<h6 class="return-home">Back to Porftolio</h6>
 								<span class="oi oi-arrow-circle-left"></span>
 							</a>
