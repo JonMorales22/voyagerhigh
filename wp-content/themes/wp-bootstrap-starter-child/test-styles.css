@@ -37,7 +37,7 @@ a.return-home {
 	display: inline-block;
 }
 
-a.return-home :hover{
+a.return-home:hover{
 	color: #80BBB0FF;
 	text-decoration: none;
 }
