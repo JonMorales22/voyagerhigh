@@ -117,7 +117,7 @@ Template: wp-bootstrap-starter
 	.tagline {
 		font-family: 'Comfortaa', cursive;
 		font-size: 4vw;
-		color: #80BDB1;
+		color: #27E1BC; /*original color: #80BDB1; */
 	}
 
 	.profile-pic-frame{
@@ -149,7 +149,7 @@ Template: wp-bootstrap-starter
 	}
 	.about-title h1{
 		font-size: 70px;
-		color: #318171;
+		color: #3BBDA3; /* original color: ##318171*/
 	}
 
 	.card-holder{
@@ -318,6 +318,7 @@ Template: wp-bootstrap-starter
 		color: #80BBB0FF;
 		text-decoration: none;
 	}
+
 
 	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   	  color: rgba(255,255,255,.5)!important;
