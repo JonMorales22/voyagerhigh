@@ -12,7 +12,7 @@ Template: wp-bootstrap-starter
 @import url(../wp-bootstrap-starter/style.css);
 
 	/*EMPTY*/
-	body{
+	body.front-page{
 		width:100%;
 		position:relative;
 		background-image: url("../../uploads/2018/02/background5.png");
@@ -305,6 +305,10 @@ Template: wp-bootstrap-starter
 
 	.oi.oi-chevron-top{
 		color: inherit;
+	}
+
+	.button-holder{
+		margin-top: 20px;
 	}
 
 	a{

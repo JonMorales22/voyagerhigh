@@ -58,3 +58,7 @@ h6{
 .card.gameboard.display{
 	margin-bottom: 10px;
 }
+
+test {
+	transition: color 1.0s;
+}

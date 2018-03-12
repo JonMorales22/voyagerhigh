@@ -1,12 +1,11 @@
 @import url(/style.css);
 
-.content{
-	text-align: center;
+body.page{
+	background-color: #ededed;
 }
 
-.app {
-	background-image: none;
-	background-color: #ededed;
+.content{
+	text-align: center;
 }
 
 .poop{
@@ -19,6 +18,30 @@
 
 h1.container-title{
 	font-size: 60px;
+}
+
+
+/* thanks.php */
+.content.rounded{
+	background-color: #EDEDED;
+	margin: 200px auto 0 auto;
+	width: 500px;
+}
+
+.content a{
+	color: #111;
+	display: inline-block;
+}
+
+.content a:hover{
+	color: #80BBB0FF;
+	text-decoration: none;
+}
+
+.oi.oi-arrow-circle-left{
+	font-size: 5rem;
+	color: inherit;
+	margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 768px)

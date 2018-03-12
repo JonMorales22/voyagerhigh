@@ -24,7 +24,7 @@ TO DO:
 ?>
 	<head>
 		<!--<link href="https://fonts.googleapis.com/css?family=Comfortaa|Work+Sans|Bungee" rel="stylesheet">-->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"/>
+		<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"/>-->
 		<?php
 			wp_head();
 		?>
@@ -32,7 +32,7 @@ TO DO:
 	</head>
 
 	<main id="main" class="site-main" role="main">
-		<body>
+		<body class="front-page">
 			<div class="scroll-menu">
 				<div class="dropdown">
 				  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -198,14 +198,11 @@ TO DO:
 							    <label for="exampleFormControlTextarea1"></label>
 							    <textarea class="form-control" id="exampleFormControlTextarea1" name="send" type="text" placeholder="Your message" rows="10" required></textarea>
 							  </div>
-							  <div class="form-group">
-							    <label for="Verification"></label>
-							    <input class="form-control" id="exampleFormControlInput1" type="text" placeholder="Prove you're human: 2+2=?" required>
-							  </div>
 							  <div class="button-holder">
 							  		<a tabindex="0" id="btn-popper" class="btn btn-primary btn-sm">Send</a>
 								  	<button type="reset" class="btn btn-primary btn-sm">Clear</button>
 							  </div>
+							  <input type="hidden" name="_next" value="<?php echo get_stylesheet_directory_uri(); ?>/thanks"/>
 							</form>
 								<!--data-container="body" data-toggle="popover" data-trigger="focus" data-placement="left"-->
 						</div><!--form container-->
