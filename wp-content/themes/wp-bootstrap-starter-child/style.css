@@ -300,7 +300,6 @@ Template: wp-bootstrap-starter
 
 	.back-to-top{
 		color: #FFF;
-		display: inline;
 	}
 
 	.oi.oi-chevron-top{
@@ -309,6 +308,10 @@ Template: wp-bootstrap-starter
 
 	.button-holder{
 		margin-top: 20px;
+	}
+
+	.front-page.scroll p {
+		display: inline-block;
 	}
 
 	a.front-page {
