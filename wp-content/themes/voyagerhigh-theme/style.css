@@ -1,0 +1,378 @@
+/*
+Theme Name: Voyager High
+Author: Jonathan Morales;
+Description: A quick test of creating themes from scratch in wordpress;
+Version: 0.0.1;
+License: CDDL-1.0 ;
+License URI: https://spdx.org/licenses/CDDL-1.1.html;
+Text Domain: voyager-high;
+*/
+
+
+	/*EMPTY*/
+	body.front-page{
+		width:100%;
+		position:relative;
+		background-image: url("../../uploads/2018/02/background5.png");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+
+	a p {
+		color: inherit;
+	}
+
+	p h1{
+		line-height: 0;
+	}
+
+	h1,h2,h3,h4,h5,form{
+		margin: 0;
+		padding: 0;
+	}
+
+	figure{
+		max-width: 285px;
+		min-width: 285px;
+		margin: auto;
+		margin-top: 225px;
+	}
+
+	textarea{
+		resize: none;
+	}
+
+	li{
+		text-align: left;
+		padding-top: 15px;
+	}
+
+
+
+	#dropdownMenuButton{
+		width: 50px;
+		position: fixed;
+		margin: 10px 10px 0;
+		background-color: #FFF;
+		border-color: rgba(0,0,0,.125)
+	}
+
+	.big-container{
+		background-color: #ededed;
+		max-width: 100%;
+		padding: 0;
+	}
+
+	.dropdown-item{
+		
+	}
+
+	.oi{
+		width: 100%;
+		color: rgba(0,0,0,.125)
+	}
+
+	/*Disables the arrow that bootstrap places on dropdowns by default*/
+	
+	.dropdown-toggle::after {
+	    display:none
+	}
+
+	.scroll-menu{
+		position: fixed;
+		z-index: 1;
+	}
+
+	.content-container {
+		width: 100%;
+		height: 725px;
+	}
+
+	.content-container .row {
+		margin: auto;
+		max-width: 500px;
+	}
+
+	.title, .tagline {
+		margin: inherit;
+		color: #FFFFFF;
+		text-align: center;
+		text-transform: uppercase;
+		line-height: 1;
+	}	
+
+	.title{
+		font-family: 'Work Sans', sans-serif;
+		font-size: 10vw;
+		font-weight: bold;
+		padding-top: 250px;
+	}
+
+	.tagline {
+		font-family: 'Comfortaa', cursive;
+		font-size: 4vw;
+		color: #27E1BC; /*original color: #80BDB1; */
+	}
+
+	.profile-pic-frame{
+		border-radius: 50%;
+		background-color: #FFFFFF;
+	}	
+
+	.profile-pic-frame img{
+		border-radius: 50%;
+		padding: 10px;
+	}	
+
+	.child-container{
+		text-align:center;
+		padding-top: 25px;
+	}
+
+	.container-title, .about-title {
+		font-family: 'Bungee', cursive;
+		padding-top: 25px;
+	}
+
+	.container-title h1{
+		font-size: 10.4vw;
+	}
+
+	.about-title{
+		padding-top: 95px;
+	}
+	.about-title h1{
+		font-size: 70px;
+		color: #3BBDA3; /* original color: ##318171*/
+	}
+
+	.card-holder{
+		margin: 10px;
+	}
+
+	.card.about {
+		width: 100%;
+		max-width: 330px;
+		height: 300px;
+		margin: 25px auto;
+	}
+
+	.card-text.about{
+		width: 245px;
+	}
+
+	.card-text.block{
+		padding-right: 1rem;
+	}
+
+
+	.card-body.about{
+		padding: 8px;
+	}
+
+	.card p{
+		text-align: left;
+	}
+
+	.card-title{
+		margin-top: 15px;
+	}
+
+	.card-text.about li {
+		padding: 0;
+	}
+
+	.card-btn{
+		margin-bottom: 10px;
+	}
+
+	.block{
+		width: 90%; /*PUTTING THIS HERE FOR NOW, BE SURE TO CHANGE TO %% LATER!!*/
+		display: inline-block;
+		margin: 5px;
+		background-color: #FFF;
+	}
+
+	.block-content {
+		background-color: #fff;
+		flex-flow: row nowrap;
+		min-height: 250px;
+	}
+
+	.block-content img{
+		width: 245px;
+		height: 245px;
+		padding: 15px;
+	}
+
+	.project-pic {
+		width: 250px;
+		height: 250px;
+		margin: auto
+	}
+
+	.oi.oi-phone, .oi.oi-envelope-closed{
+		font-size: 20px;
+		color: #FFF;
+		top: 0;
+		display: inline;
+		margin-right: 10px;
+	}
+	.oi.oi-envelope-closed{
+		top: 3px;
+		color: inherit;
+	}
+	.wrapper{
+		background-image: url("assets/nyc-manhattan-map.png");
+		background-repeat: no-repeat;asdf
+	}
+	.wrapper.contact {
+		display: inline-block
+	}
+
+	.form-container{
+		display: inline-block;
+		width: 75%;
+		margin: 20px auto;
+		border-radius: 10%;
+	}
+	
+	.form-container h2{
+		font-family: 'Comfortaa', cursive;
+		color: #FFF;
+	}
+
+	.form-control{
+		background-color: #11111100;
+		border-color: #11111100 #11111100 #FFFFFFFF #11111100;
+		border-radius: 0;
+		color: rgba(255,255,255,.5);
+	}
+	.form-control:focus {
+		background-color: #11111100;
+		border-color: #11111100 #11111100 #80BBB0FF #11111100;
+		box-shadow: 0 0 0 0 #80BBB0FF;
+		color: #ffffff88;
+	}
+	.form-control:invalid {
+		background-color: #11111100;
+		border-color: #11111100 #11111100 #FFFFFF #11111100;
+		box-shadow: 0 0 0 0 #CE5353FF;
+		color: #ffffff88;
+	}
+	.form-control:valid {
+		background-color: #11111100;
+		border-color: #11111100 #11111100 #80BBB0FF #11111100;
+		box-shadow: 0 0 0 0 #CE5353FF;
+		color: #ffffff88;
+	}
+	/*
+		#6C757D
+	*/
+	.element-title h2{
+		color: #FFF;
+	}
+
+	.child-element.contact{
+		width:100%;
+		color: #FFF;
+		display: inline-block;
+		margin: auto;
+		padding-top: 10px;
+	}
+
+	.contact-info{
+		display: inline-block;
+	}
+
+	.contact-info p{
+		text-align: center;
+		color: inherit;
+		font-family: 'Comfortaa', cursive;
+		font-size: 16px;
+	}
+
+	.back-to-top{
+		color: #FFF;
+	}
+
+	.oi.oi-chevron-top{
+		color: inherit;
+	}
+
+	.button-holder{
+		margin-top: 20px;
+	}
+
+	.front-page.scroll p {
+		display: inline-block;
+	}
+
+	a.front-page {
+		color: #FFF;
+	}
+	a.front-page:hover {
+		color: #80BBB0FF;
+		text-decoration: none;
+	}
+
+
+	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  	  color: rgba(255,255,255,.5)!important;
+	}
+	::-moz-placeholder { /* Firefox 19+ */
+	  color: rgba(255,255,255,.5)!important;
+	}
+	::-ms-input-placeholder { /* IE 10+ */
+	  color: rgba(255,255,255,.5)!important;
+	}
+	::-moz-placeholder { /* Firefox 18- */
+	  color: rgba(255,255,255,.5)!important;
+	}
+
+@media only screen and (min-width: 576px) {
+	.title {
+		font-size: 50px;
+	}
+	.tagline {
+		font-size: 22px;
+	}
+	.card {
+		margin: 20px 1rem 20px 1rem;
+	}
+	.block{
+		width: 550px;
+	}
+	.block-content{
+		display: flex;
+	}
+	.container-title h1{
+		font-size: 60px;
+	}
+}
+
+@media only screen and (min-width: 768px)
+{
+	.card-body.about{
+		padding: 1.25rem;
+	}
+
+	.card-text.about{
+		width: 260px;
+	}
+
+	.card.about{
+		width: 30%;
+		max-width: 300px;
+		height: 400px;
+		margin: 5px 0px 5px 0px;
+	}
+
+	.card{
+		display: inline-block;
+	}
+}
