@@ -12,7 +12,7 @@
 function register_bootstrap_scripts()
 {
 	wp_deregister_script('jquery');
-	wp_register_script('jquery','https://code.jquery.com/jquery-3.2.1.slim.min.js',false,'3.3.1', true);
+	wp_register_script('jquery','https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js',false,'3.3.1', true);
 
 	wp_register_script('ajax','https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', false, '1.12.9', true);
 
@@ -46,8 +46,17 @@ function register_google_fonts() {
 function register_voyager_high_styles()
 {
 	wp_register_style('voyager_high_style', get_template_directory_uri() . '/style.css');
-	wp_enqueue_style('voyager_high_style');
 
+	wp_register_style('8_puzzle_styles', '/wp-content/themes/wp-bootstrap-starter-child/test-styles.css', 'voyager_high_style', '0.0.1');
+
+	wp_enqueue_style('voyager_high_style');
+	wp_enqueue_style('8_puzzle_styles');
+}
+
+function register_voyager_high_scripts() 
+{
+	wp_register_script('voyager_high_script', get_template_directory_uri() . '/assets/js/scripts.js','jquery', '0.0.1' , true);
+	wp_enqueue_script('voyager_high_script');
 }
 
 
@@ -64,14 +73,10 @@ function register_8_puzzle_styles()
 	wp_enqueue_style('8_puzzle_styles');
 }
 
-
-
-
 add_action('wp_enqueue_scripts', 'register_bootstrap_scripts');
 add_action('wp_enqueue_scripts', 'register_bootstrap_styles');
 add_action('wp_enqueue_scripts', 'register_google_fonts');
 add_action('wp_enqueue_scripts', 'register_voyager_high_styles');
-
-
+add_action('wp_enqueue_scripts', 'register_voyager_high_scripts');
 
 ?>

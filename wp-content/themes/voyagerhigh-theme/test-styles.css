@@ -1,0 +1,69 @@
+@import url(/style.css);
+
+body.page{
+	background-color: #ededed;
+}
+
+.content{
+	text-align: center;
+}
+
+.poop{
+	color: #FFF;
+}
+
+.embed-responsive{
+	height: 625px;
+}
+
+h1.container-title{
+	font-size: 3rem;
+}
+
+.btn.btn-primary.info
+{
+	margin-top: 10px;
+}
+
+
+/* thanks.php */
+.content.rounded{
+	background-color: #EDEDED;
+	margin: 200px auto 0 auto;
+}
+
+a.return-home {
+	color: #111;
+	display: inline-block;
+}
+
+a.return-home:hover{
+	color: #80BBB0FF;
+	text-decoration: none;
+}
+
+.oi.oi-arrow-circle-left{
+	font-size: 5rem;
+	color: inherit;
+	margin-bottom: 20px;
+}
+
+h6.return-home{
+	color: inherit;
+}
+
+@media only screen and (min-width: 768px)
+{
+	.embed-responsive{
+		height: 500px;
+	}
+
+}
+
+@media only screen and (min-width: 768px)
+{
+	.embed-responsive{
+		height: 530px;
+	}
+
+}
