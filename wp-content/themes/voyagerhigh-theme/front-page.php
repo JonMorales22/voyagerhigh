@@ -31,9 +31,7 @@
 				</div>
 				<div class="row">
 					<figure id="scroll-one">
-						<div class ="profile-pic-frame">
-							<img src=" <?php echo get_stylesheet_directory_uri(); ?>/assets/profile-pic-edit.jpg"/>
-						</div>
+							<img class='profile-pic' src=" <?php echo get_stylesheet_directory_uri(); ?>/assets/profile-pic-edit.jpg"/>
 					</figure>
 				</div>
 			</div><!--content-container-->
@@ -55,7 +53,7 @@
 						    <h5 class="card-title">Skills</h5>
 						    <div class="card-text about">
 						    	<p>Programming Languages</p>
-						    		<ul>
+						    		<ul class="about">
 						    			<li>C/C++/C#</li>
 						    			<li>Java</li>
 						    			<li>Javascript
@@ -63,7 +61,7 @@
 						    			<li>Git</li>
 						    		</ul>
 						    	<p>Software/Operating Systems</p>
-						    		<ul>
+						    		<ul class="about">
 										<li>Wordpress</li>
 										<li>Bootstrap</li>
 										<li>Xcode/Visual Studio</li>
@@ -76,13 +74,13 @@
 						    <h5 class="card-title">Education</h5>
 						    <div class="card-text about">
 						    	<p>East Stroudsburg University</p>
-						    	<ul>
+						    	<ul class="about">
 						    		<li>Graduation: May 2018</li>
 						    		<li>B.S. in Computer Science</li>
 						    		<li>Minor in Mathematics</li>
 						    	</ul>
 						    	<p>Coursework</p>
-						    	<ul>
+						    	<ul class="about">
 						    		<li>Software Engineering</li>
 						    		<li>Data Structures</li>
 						    		<li>Operating Systems</li>
@@ -97,7 +95,7 @@
 						    <h5 class="card-title">Hobbies</h5>
 						     <div class="card-text about">
 						     	<p>Music</p>
-						     		<ul>
+						     		<ul class="about">
 						     			<li>Guitar</li>
 						     			<li>Piano</li>
 						     			<li>Bass Guitar</li>
@@ -105,7 +103,7 @@
 						     			<li>Bongos</li>
 						     		</ul>
 						     	<p>Other</p>
-						     		<ul>
+						     		<ul class="about">
 						     			<li>Reading</li>
 						     			<li>Cooking</li>
 						     			<li>Learning Chinese</li>
