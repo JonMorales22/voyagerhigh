@@ -79,4 +79,6 @@ add_action('wp_enqueue_scripts', 'register_google_fonts');
 add_action('wp_enqueue_scripts', 'register_voyager_high_styles');
 add_action('wp_enqueue_scripts', 'register_voyager_high_scripts');
 
+add_theme_support( 'post-thumbnails' );
+
 ?>

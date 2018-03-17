@@ -13,7 +13,7 @@ Text Domain: voyager-high;
 	body.front-page{
 		width:100%;
 		position:relative;
-		background-image: url("../../uploads/2018/02/background5.png");
+		background-image: url("../../uploads/2018/03/mexico_city_background.jpg");
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 	}
@@ -36,7 +36,7 @@ Text Domain: voyager-high;
 	}
 
 	figure{
-		max-width: 285px;
+		max-width: 305px;
 		min-width: 285px;
 		margin: auto;
 		margin-top: 225px;
@@ -227,8 +227,9 @@ Text Domain: voyager-high;
 		color: inherit;
 	}
 	.wrapper{
-		background-image: url("assets/nyc-manhattan-map.png");
-		background-repeat: no-repeat;asdf
+		background-image: url("../../uploads/2018/03/nyc-manhattan-map.jpg");
+		/*background-image: url("assets/nyc-manhattan-map.png");*/
+		background-repeat: no-repeat
 	}
 	.wrapper.contact {
 		display: inline-block

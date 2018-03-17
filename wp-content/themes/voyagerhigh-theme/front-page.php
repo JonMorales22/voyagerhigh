@@ -31,7 +31,7 @@
 				</div>
 				<div class="row">
 					<figure id="scroll-one">
-							<img class='profile-pic' src=" <?php echo get_stylesheet_directory_uri(); ?>/assets/profile-pic-edit.jpg"/>
+							<img class='profile-pic' src=" <?php echo get_stylesheet_directory_uri(); ?>/../../uploads/2018/03/profile-pic-temp-4.jpg"/>
 					</figure>
 				</div>
 			</div><!--content-container-->
