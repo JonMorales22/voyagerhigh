@@ -152,7 +152,7 @@
 						<div class="child-element contact">
 							<div class="contact-info">
 									<p><span class="oi oi-phone"></span>570-977-2847</p>
-									<a class="front-page" href="www.linkedin.com/in/jonlmorales">
+									<a class="front-page" href="https://www.linkedin.com/in/jonlmorales">
 										<p>
 											<span class="fa fa-linkedin"></span>
 											  Linkedin Profile
