@@ -6,6 +6,7 @@
 		<?php
 			wp_head();
 		?>
+		    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
 				<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
@@ -151,6 +152,12 @@
 						<div class="child-element contact">
 							<div class="contact-info">
 									<p><span class="oi oi-phone"></span>570-977-2847</p>
+									<a class="front-page" href="www.linkedin.com/in/jonlmorales">
+										<p>
+											<span class="fa fa-linkedin"></span>
+											  Linkedin Profile
+										</p>
+									</a>
 									<a class="front-page" href="mailto:jonmorales2.718@gmail.com">
 										<p>
 											<span class="oi oi-envelope-closed"></span>

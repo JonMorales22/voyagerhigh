@@ -226,6 +226,10 @@ Text Domain: voyager-high;
 		top: 3px;
 		color: inherit;
 	}
+
+	.fa.fa-linkedin{
+		font-size: 20px;
+	}
 	.wrapper{
 		background-image: url("../../uploads/2018/03/nyc-manhattan-map.jpg");
 		/*background-image: url("assets/nyc-manhattan-map.png");*/
