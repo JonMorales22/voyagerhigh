@@ -20,6 +20,7 @@
 				  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 				  	<a class="scroll dropdown-item" href="#home">Home</a>
 				    <a class="scroll dropdown-item" href="#about">About</a>
+				    <a class="scroll dropdown-item" href="#work">Work</a>
 				    <a class="scroll dropdown-item" href="#projects">Projects</a>
 				    <a class="scroll dropdown-item" href="#contact">Contact</a>
 				  </div>
@@ -76,7 +77,7 @@
 						    <div class="card-text about">
 						    	<p>East Stroudsburg University</p>
 						    	<ul class="about">
-						    		<li>Graduation: May 2018</li>
+						    		<li>Graduation: August 2018</li>
 						    		<li>B.S. in Computer Science</li>
 						    		<li>Minor in Mathematics</li>
 						    	</ul>
@@ -117,11 +118,37 @@
 						<a href=" <?php echo get_stylesheet_directory_uri(); ?>/../../uploads/2018/03/JonMorales_Resume.pdf" class="btn btn-primary" download>Download full resume</a>
 					</div>
 				</div><!--child-container-->
-				<div id="projects" class="child-container">
-					<div class="container-title projects"><h1>Projects</h1></div>
+				<div id="work" class="child-container">
+					<div class="container-title projects"><h1>Work History</h1></div>
 					<?php
 						$args = array(
-							'post_type' => 'post',
+							'post_type' => 'work-history-post'
+						);
+						$query = new WP_Query($args);
+
+						if($query->have_posts() ){
+							while($query->have_posts()){
+								$query->the_post();
+								echo "<div class='card block'>";
+									echo "<div class='card-title'><h4>"; the_title(); echo "</h4></div>";
+									echo "<div class='block-content'>";
+									echo "<div class='card-text block'>";
+									echo( "<p><strong>".types_render_field( 'location-slug')."</strong></p>");
+									echo( "<p><strong>".types_render_field( 'date-range')."</strong></p>");
+									echo get_the_content();
+									echo "</div>";
+									echo "</div>";//<----end card-body ---->
+								echo "</div>"; //<----end card-block ---->
+							}
+							wp_reset_postdata();
+						}
+					?>
+				</div>
+				<div id="projects" class="child-container">
+					<div class="container-title projects"><h1>Other Projects</h1></div>
+					<?php
+						$args = array(
+							'category_name' => 'project'
 						);
 						$query = new WP_Query($args);
 

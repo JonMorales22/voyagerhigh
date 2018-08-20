@@ -27,7 +27,7 @@
 				       	<!-- Button trigger modal -->
 						<button type="button" class="btn btn-primary info" data-toggle="modal" data-target=".bd-example-modal-lg">Info</button>
 				   </div><!-- .content -->
-				   			   			<div id="aboutModal" class="modal fade in bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+				   		<div id="aboutModal" class="modal fade in bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 						  <div class="modal-dialog modal-lg">
 						    <div class="modal-content">
 						    	<div class="modal-header">

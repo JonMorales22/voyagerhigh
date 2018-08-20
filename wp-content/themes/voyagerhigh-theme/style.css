@@ -190,6 +190,10 @@ Text Domain: voyager-high;
 		margin-bottom: 10px;
 	}
 
+	.card-text p {
+		margin-left: 23px;
+	}
+
 	.block{
 		width: 90%; /*PUTTING THIS HERE FOR NOW, BE SURE TO CHANGE TO %% LATER!!*/
 		display: inline-block;
