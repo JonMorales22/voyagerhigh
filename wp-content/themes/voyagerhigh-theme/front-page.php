@@ -115,7 +115,7 @@
 						</div>
 					</div><!--card-holder-->
 					<div class="child-element">
-						<a href=" <?php echo get_stylesheet_directory_uri(); ?>/../../uploads/2018/03/JonMorales_Resume.pdf" class="btn btn-primary" download>Download full resume</a>
+						<a href=" <?php echo get_stylesheet_directory_uri(); ?>/../../uploads/JonMorales_Resume.pdf" class="btn btn-primary" download>Download full resume</a>
 					</div>
 				</div><!--child-container-->
 				<div id="work" class="child-container">
